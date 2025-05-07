@@ -1,0 +1,188 @@
+// 기본 변수
+$max-width: 1024px;
+$font-main: 'Pretendard', sans-serif;
+$color-bg: #ffffff;
+$color-text: #333;
+$color-link: #0a66c2;
+$color-muted: #6c757d;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  line-height: 1.6;
+  background-color: $color-bg;
+  color: $color-text;
+  margin: 0;
+}
+
+header {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 10;
+}
+
+.header-container {
+  max-width: $max-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: $color-text;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+header .logo:hover {
+  color: $color-link;
+}
+
+header .github-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+header .github-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.main {
+  max-width: $max-width;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.banner {
+  width: 100%;
+  height: 180px;
+  background-color: #ddd;
+  margin-bottom: 2rem;
+}
+
+.post-list {
+
+  max-width: $max-width;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    li {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0.5rem 0;
+      line-height: 1.4;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-text;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $color-link;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// 📌 글 보기 (post.html)
+article#content {
+  max-width: $max-width;
+  margin: 0 auto 80px;
+  padding: 1rem;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+article h1, 
+article h2, 
+article h3 {
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+article p {
+  margin: 1rem 0;
+}
+
+article pre {
+  background-color: #f4f4f9;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+article code {
+  font-family: 'Fira Code', monospace;
+  background-color: #f0f0f5;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.75rem 0;
+  }
+
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header .logo {
+    font-size: 1.25rem;
+  }
+
+  header .github-icon img {
+    margin-top: 0.5rem;
+  }
+
+  .banner {
+    height: 180px;
+  }
+
+  .post-list {
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    li {
+      font-size: 0.9rem;
+    }
+  }
+
+  article#content {
+    padding: 1rem;
+  }
+}

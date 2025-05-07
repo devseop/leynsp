@@ -1,0 +1,17 @@
+{
+  "name": "leynsp",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "scss": "sass css/style.scss css/style.css --watch",
+    "serve": "http-server .",
+    "start": "yarn scss & yarn serve"
+  },
+  "keywords": [],
+  "author": "leynsp",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.87.0",
+    "http-server": "^14.1.1"
+  }
+}
