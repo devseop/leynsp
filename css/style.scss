@@ -189,7 +189,8 @@ pre code {
   }
 
   .header-container {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     text-align: center;
   }
 
@@ -197,9 +198,6 @@ pre code {
     font-size: 1.25rem;
   }
 
-  header .github-icon img {
-    margin-top: 0.5rem;
-  }
 
   .banner {
     height: 180px;
