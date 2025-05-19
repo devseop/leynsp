@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+interface GroupedPosts {
+  [key: number]: CollectionEntry<'posts'>[];
+}
+
+const postList = await getCollection('posts');
+postList.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+
+const groupedPostList = postList.reduce<GroupedPosts>((acc, post) => {
+  const year = new Date(post.data.date).getFullYear();
+  acc[year] = acc[year] || [];
+  acc[year].push(post);
+  return acc;
+}, {});
+
+for (const year in groupedPostList) {
+  groupedPostList[year].sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+}
+
+---
+<section class="post-list">
+  {Object.keys(groupedPostList)
+    .sort((a, b) => parseInt(b) - parseInt(a)) // 최신 연도 순
+    .map((year) => (
+      <div>
+        <h2>{year}년</h2>
+        <ul>
+          {groupedPostList[parseInt(year)].map((post) => (
+            <li>
+              <a href={`/posts/${post.slug}`}>{post.data.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+</section>

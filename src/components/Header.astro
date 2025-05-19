@@ -1,0 +1,69 @@
+---
+import github from '../assets/github-logo.png';
+
+interface Props {
+  githubUrl?: string;
+  logoText?: string;
+}
+
+const { 
+  githubUrl = "https://github.com/devseop",
+  logoText = "leynsp*"
+} = Astro.props;
+---
+
+<header>
+  <div class="header-container">
+    <a href="/" class="logo">{logoText}</a>
+    <a href={githubUrl} target="_blank" class="github-icon">
+      <img src={github.src} width="24" height="24" alt="GitHub" />
+    </a>
+  </div>
+</header>
+
+<style>
+  header {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 10;
+  }
+
+  .header-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+  }
+
+  header .logo:hover {
+    color: #F97642;
+  }
+
+  header .github-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+  }
+
+  header .github-icon img {
+    width: 24px;
+    height: 24px;
+  }
+</style>

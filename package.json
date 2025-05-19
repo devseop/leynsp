@@ -1,19 +1,18 @@
 {
   "name": "leynsp",
-  "version": "1.0.0",
-  "main": "index.html",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "scss": "sass css/style.scss css/style.css --watch",
-    "serve": "http-server .",
-    "start": "yarn scss & yarn serve",
-    "build": "sass css/style.scss css/style.css",
-    "deploy": "yarn build && git add . && git commit -m 'Deploy: GitHub Pages' && git push"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "keywords": [],
-  "author": "leynsp",
-  "license": "MIT",
-  "devDependencies": {
-    "sass": "^1.87.0",
-    "http-server": "^14.1.1"
+  "dependencies": {
+    "@astrojs/mdx": "^4.2.6",
+    "@astrojs/react": "^4.2.7",
+    "astro": "^5.7.13",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }
