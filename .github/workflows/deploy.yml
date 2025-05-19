@@ -25,8 +25,12 @@ jobs:
         with:
           node-version: "20"
           cache: 'npm'
-      - name: Install dependencies
-        run: npm install
+      - name: Clean install dependencies
+        run: |
+          rm -rf node_modules
+          rm -rf .astro
+          npm cache clean --force
+          npm install
       - name: Build with Astro
         run: npm run build
       - name: Upload artifact
