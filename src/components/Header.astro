@@ -14,7 +14,13 @@ const {
 
 <header>
   <div class="header-container">
-    <a href="/leynsp/" class="logo">{logoText}</a>
+    <div class="left-section">
+      <a href="/leynsp/" class="logo">{logoText}</a>
+      <nav class="nav-menu">
+        <a href="/leynsp/" class="nav-item">Posts</a>
+        <a href="/leynsp/playlist" class="nav-item">Playlist</a>
+      </nav>
+    </div>
     <a href={githubUrl} target="_blank" class="github-icon">
       <img src={github.src} width="24" height="24" alt="GitHub" />
     </a>
@@ -40,6 +46,12 @@ const {
     padding: 0 1rem;
   }
 
+  .left-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
   header .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -51,6 +63,22 @@ const {
   }
 
   header .logo:hover {
+    color: #F97642;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-item {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .nav-item:hover {
     color: #F97642;
   }
 
