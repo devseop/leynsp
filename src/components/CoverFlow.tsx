@@ -30,8 +30,6 @@ const CoverFlow: React.FC<CoverFlowProps> = ({ items }) => {
   }, []);
 
   return (
-    <>
-    <p>{items[selectedIndex].listenedAt}</p>
     <div
       className="coverflow-container"
       ref={containerRef}
@@ -65,7 +63,6 @@ const CoverFlow: React.FC<CoverFlowProps> = ({ items }) => {
         })}
       </div>
     </div>
-    </>
   );
 };
 
