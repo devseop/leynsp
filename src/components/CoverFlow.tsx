@@ -9,7 +9,8 @@ interface CoverFlowProps {
 const NON_SELECTED_ALBUMS_ANGLE = 55;
 
 const CoverFlow: React.FC<CoverFlowProps> = ({ items }) => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const CENTERED_ALBUM = Math.floor(items.length / 2);
+  const [selectedIndex, setSelectedIndex] = useState(CENTERED_ALBUM);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = (e: React.WheelEvent) => {
@@ -29,6 +30,8 @@ const CoverFlow: React.FC<CoverFlowProps> = ({ items }) => {
   }, []);
 
   return (
+    <>
+    <p>{items[selectedIndex].listenedAt}</p>
     <div
       className="coverflow-container"
       ref={containerRef}
@@ -62,6 +65,7 @@ const CoverFlow: React.FC<CoverFlowProps> = ({ items }) => {
         })}
       </div>
     </div>
+    </>
   );
 };
 
