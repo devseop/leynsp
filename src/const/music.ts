@@ -11,14 +11,14 @@ export const musics: Music[] = [
     id: 1,
     title: '새해 복',
     artistName: '장기하와 얼굴들',
-    albumCover: 'https://i.namu.wiki/i/E7pqVQ1zal6tO1n9ihZNAMLMQhWmhUWrWWBTPJlqHjkN9CUHPb_LthgoDocm622mditdY3R0adOMxjoCiBj9-QcfbhOqREpla3iJ4JzcYipY7DalZ7ajb6hiDkBxYsWZNIE-AxVqxB9LPUUJDRkQOw.webp',
+    albumCover: 'https://image.bugsm.co.kr/album/images/original/4841/484117.jpg?version=undefined',
     listenedAt: 2025
   },
   {
     id: 2,
     title: 'Von dutch',
     artistName: 'Charli xcx',
-    albumCover: 'https://i.namu.wiki/i/9oHp0WOH_DeNX3kM0U7vGk_w_dWBL-lF8Awbo2kyLEeWdlIaIWab2IJ39sxrftJhFbtFv5qgkDMfrHs9kCfwWe9nIPtGsCUWabUvF1DE0tqcEwlQqMGlPhdUTzDoXDVlHffBLv87-8_qY63ypr_p6w.webp',
+    albumCover: 'https://image.bugsm.co.kr/album/images/original/350790/35079096.jpg?version=undefined',
     listenedAt: 2025
   },
   {
@@ -32,28 +32,28 @@ export const musics: Music[] = [
     id: 4,
     title: 'space',
     artistName: 'The Poles',
-    albumCover: 'https://i.namu.wiki/i/F22xSmW2jA23P4WuG8SqneCCRqtBU1f491UTIvr9ADyqYhdOm4k5SQFkf1RE9b5B2RV4v3sMxwLDH9f2LKmnXWZOUhWSqYoJCRzHE6SX_xE5VLVnMwTRqPQF06p5DqaZJ8nBaArNNTQwU_iIe_dxkQ.webp',
+    albumCover: 'https://image.bugsm.co.kr/album/images/original/204454/20445484.jpg?version=undefined',
     listenedAt: 2025
   },
   {
     id: 5,
     title: 'Hurry Up Tomorrow',
     artistName: 'The Weeknd',
-    albumCover: 'https://i.namu.wiki/i/cLZcPcj75LirYFWMba_mLARdRzUfYLghh68aPsznYP737PyUcZZJQ5pl1paGK3hT49bRblfxpFHh4V2fxnxgenmFq4teLyw9qf7ZFLS2JJc89wq6p6AKEqYHmbEl9I6Mn5clYcfpW3lWg5FLbBCCfQ.webp',
+    albumCover: 'https://image.bugsm.co.kr/album/images/original/371003/37100348.jpg?version=undefined',
     listenedAt: 2025
   },
   {
     id: 6,
     title: '그 때 그 노래',
     artistName: '장기하와 얼굴들',
-    albumCover: 'https://i.namu.wiki/i/aCuU7n1rO-De7y2Me_NZdS_XWQDh0rpliFGeXuG_aEGs6SnfvHvTaT_ERghMZRqXf2XTah8vAcPS-Xa2PaG7XQu-34EAASUzx5fX92gbBdVdq5xG-Nnuj-awic3QcsdtOCbDk7T2btvyXo_XWj-kyw.webp',
+    albumCover: 'https://image.bugsm.co.kr/album/images/original/2894/289433.jpg?version=undefined',
     listenedAt: 2025
   },
   {
     id: 7,
     title: 'Pink + White',
     artistName: 'Frank Ocean',
-    albumCover: 'https://i.namu.wiki/i/DmKAsuNXTAmtmpQaWyhFRvHGwQBvvFHSUpcd9XgH8w0y5Kpzf-FyuvBri-oXTQT8xGMiZ5-K37d84y_7Bc8eMRwAHACuCtCQrbOSppgMoOhjfynjVYy_ezKTiS8BVEs8Vbb-X_HjygUNvIo55dBrUw.webp',
+    albumCover: 'https://image.bugsm.co.kr/album/images/original/191358/19135867.jpg?version=undefined',
     listenedAt: 2025
   },
   {
@@ -123,14 +123,21 @@ export const musics: Music[] = [
     id: 17,
     title: 'Last Scene (feat. Wonstein)',
     artistName: '아이유',
-    albumCover: 'https://i.namu.wiki/i/G-iCydIWegAjoSOtqV-mVqfdxUWnd5ePMIrqv-rjIVQieDjU7KnL_BJvF4J9Y9pa-25bq1H4lPqYLsd_id-L1dhajDtdNEST_X7cRzQUC_o_rNazmSE5ARaFRJHyAw7IekGhSzHQAa_jjD9FhcDQ8A.webp',
+    albumCover: 'https://image.bugsm.co.kr/album/images/original/41204/4120415.jpg?version=undefined',
     listenedAt: 2025
   },
   {
     id: 18,
     title:'Dreamin Of The Past (feat. Kanye West)',
     artistName: 'Pusha T',
-    albumCover: 'https://i.namu.wiki/i/9_6FX3aheupmNwf6BnWVAEpMzAiqTqsrO5uUTfoy6pWvO5Iu2BbUE_li3pjulcx-rrj7gOBfH7OWZq5anKGiqIL690Cs8W_wuqTY_LqaoH2iaBlAQOAMJlOGie-un0ORdIL-AJXjay7w8ZVl0jeLBg.webp',
+    albumCover: 'https://image.bugsm.co.kr/album/images/original/177196/17719682.jpg?version=undefined',
+    listenedAt: 2025
+  },
+  {
+    id: 19,
+    title: 'Mad Funk Camp ALl Starz',
+    artistName: '아소토 유니온',
+    albumCover: 'https://image.bugsm.co.kr/album/images/original/331/33175.jpg?version=undefined',
     listenedAt: 2025
   }
 ]

@@ -29,6 +29,32 @@ const CoverFlow: React.FC<CoverFlowProps> = ({ items }) => {
     }
   }, []);
 
+  const renderPlaylistItem = items.map((item, index) => {
+    const distance = index - selectedIndex;
+    const translateX = distance * 200;
+    const angle = NON_SELECTED_ALBUMS_ANGLE;
+    const rotation = distance === 0 ? 0 : distance < 0 ? angle : -angle;
+    const scale = index === selectedIndex ? 1 : 0.87;
+    const zIndex = index === selectedIndex ? 100 : items.length - Math.abs(distance);
+
+    return (
+      <div
+        key={item.id}
+        className="coverflow-item"
+        style={{
+          transform: `translateX(${translateX}px) rotateY(${rotation}deg) scale(${scale})`,
+          zIndex,
+        }}
+      >
+        <img src={item.albumCover} alt={item.title} />
+        {selectedIndex === index && <div className="coverflow-item-info">
+          <p>{item.title}</p>
+          <span>{item.artistName}</span>
+        </div>}
+      </div>
+    );
+  });
+
   return (
     <div
       className="coverflow-container"
@@ -36,31 +62,7 @@ const CoverFlow: React.FC<CoverFlowProps> = ({ items }) => {
       onWheel={handleScroll}
     >
       <div className="coverflow-wrapper">
-        {items.map((item, index) => {
-          const distance = index - selectedIndex;
-          const translateX = distance * 200;
-          const angle = NON_SELECTED_ALBUMS_ANGLE;
-          const rotation = distance === 0 ? 0 : distance < 0 ? angle : -angle;
-          const scale = index === selectedIndex ? 1 : 0.87;
-          const zIndex = index === selectedIndex ? 100 : items.length - Math.abs(distance);
-
-          return (
-            <div
-              key={item.id}
-              className="coverflow-item"
-              style={{
-                transform: `translateX(${translateX}px) rotateY(${rotation}deg) scale(${scale})`,
-                zIndex,
-              }}
-            >
-              <img src={item.albumCover} alt={item.title} />
-              {selectedIndex === index && <div className="coverflow-item-info">
-                <p>{item.title}</p>
-                <span>{item.artistName}</span>
-              </div>}
-            </div>
-          );
-        })}
+        {renderPlaylistItem}
       </div>
     </div>
   );
