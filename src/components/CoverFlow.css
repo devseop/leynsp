@@ -1,8 +1,10 @@
 .coverflow-container {
-  width: 1200px;
-  min-width: 1200px;
+  /* width: 1200px;
+  min-width: 1200px; */
+  width: 100%;
+  max-width: 1200px;
   height: 600px;
-  min-height: 600px;
+  /* min-height: 600px; */
   perspective: 1000px;
   overflow: visible;
   position: relative;
@@ -59,3 +61,9 @@
   text-align: center;
   line-height: 1.2;
 } 
+
+@media (max-width: 768px) {
+  .coverflow-container {
+    height: 420px;
+  }
+}
