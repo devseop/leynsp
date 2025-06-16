@@ -24,9 +24,16 @@ const CoverFlow: React.FC<CoverFlowProps> = ({ items }) => {
   };
 
   useEffect(() => {
-    if (containerRef.current) {
-      containerRef.current.addEventListener('wheel', (e) => e.preventDefault(), { passive: false });
-    }
+    const container = containerRef.current;
+    if (!container) return;
+
+    const preventDefault = (e: WheelEvent) => {
+      e.preventDefault();
+    };
+
+    container.addEventListener('wheel', preventDefault, { passive: false });
+
+    return () => container.removeEventListener('wheel', preventDefault);
   }, []);
 
   const renderPlaylistItem = items.map((item, index) => {
