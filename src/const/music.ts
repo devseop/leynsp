@@ -1,9 +1,10 @@
 interface Music {
   id: number;
-  title: string;
+  title?: string;
   artistName: string;
   albumCover: string;
   listenedAt: number;
+  albumName?: string;
 }
 
 export const musics: Music[] = [
@@ -138,6 +139,13 @@ export const musics: Music[] = [
     title: 'Mad Funk Camp ALl Starz',
     artistName: '아소토 유니온',
     albumCover: 'https://image.bugsm.co.kr/album/images/original/331/33175.jpg?version=undefined',
+    listenedAt: 2025
+  },
+  {
+    id: 20,
+    albumName: '살아숨셔 4',
+    artistName: '염따',
+    albumCover: 'https://image.bugsm.co.kr/album/images/1000/207324/20732484.jpg',
     listenedAt: 2025
   }
 ]

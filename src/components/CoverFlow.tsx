@@ -53,9 +53,9 @@ const CoverFlow: React.FC<CoverFlowProps> = ({ items }) => {
           zIndex,
         }}
       >
-        <img src={item.albumCover} alt={item.title} />
+        <img src={item.albumCover} alt={item.albumName || item.title} />
         {selectedIndex === index && <div className="coverflow-item-info">
-          <p>{item.title}</p>
+          <p>{item.albumName || item.title}</p>
           <span>{item.artistName}</span>
         </div>}
       </div>
