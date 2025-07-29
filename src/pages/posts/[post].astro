@@ -1,23 +1,19 @@
 ---
-import { getCollection } from 'astro:content';
+import { getPublishedPosts } from '../../utils/posts';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import PostLayout from '../../layouts/PostLayout.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('posts');
+  const posts = await getPublishedPosts();
   return posts.map((post) => ({
     params: { post: post.slug },
+    props: { post },
   }));
 }
 
 // ✅ URL 파라미터에서 slug 가져오기
-const { post: postSlug } = Astro.params;
-
-// ✅ 포스트 데이터 불러오기
-const postData = await getCollection('posts').then((posts) =>
-  posts.find((p) => p.slug === postSlug)
-);
+const { post: postData } = Astro.props;
 
 if (!postData) {
   throw new Error("Post not found");

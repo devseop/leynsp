@@ -191,4 +191,36 @@ export const musics: Music[] = [
       "https://image.bugsm.co.kr/album/images/1000/200513/20051384.jpg",
     listenedAt: 2025,
   },
+  {
+    id: 23,
+    title: "Because I'm Me",
+    artistName: 'The Avalanches',
+    albumCover: 
+      "https://image.bugsm.co.kr/album/images/1000/6269/626951.jpg",
+    listenedAt: 2025
+  },
+  {
+    id: 24,
+    title: "7번 국도",
+    artistName: "정미조",
+    albumCover:
+      "https://image.bugsm.co.kr/album/images/1000/200228/20022881.jpg",
+    listenedAt: 2025,
+  },
+  {
+    id: 25,
+    title: "비비드라라러브",
+    artistName: '이찬혁',
+    albumCover: 
+      "https://image.bugsm.co.kr/album/images/1000/41229/4122969.jpg",
+    listenedAt: 2025
+  },
+  {
+    id: 26,
+    title: "シーズン・イン・ザ・サン",
+    artistName: 'TUBE',
+    albumCover: 
+      "https://image.bugsm.co.kr/album/images/1000/1148/114873.jpg",
+    listenedAt: 2025
+  }
 ];
