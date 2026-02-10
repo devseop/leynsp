@@ -1,0 +1,233 @@
+{
+  "main": {
+    "id": "a53cdee8a7318b45",
+    "type": "split",
+    "children": [
+      {
+        "id": "53d0deafbc854f83",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac6ee9d71051722c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "public/Resource/Templates.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Templates"
+            }
+          },
+          {
+            "id": "9a25231f49afaeea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "public/Resource/Templates.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Templates"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "138a3d7ff2729a38",
+    "type": "split",
+    "children": [
+      {
+        "id": "5aa8c09acfd43f00",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec3e69c0c47efb2e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "ffc632473eb6a448",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "e0a6ecec53659da0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b4245d5fd15b2da1",
+    "type": "split",
+    "children": [
+      {
+        "id": "112c2cf684fe4b5f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "550b89b3586016d7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "public/Resource/Templates.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Templates 의 백링크"
+            }
+          },
+          {
+            "id": "1ae01c71aae61dae",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "public/Resource/Templates.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Templates 의 나가는 링크"
+            }
+          },
+          {
+            "id": "660032e2574dcb24",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "cd823f202e034ceb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "모든 속성"
+            }
+          },
+          {
+            "id": "2c7c253735d80a2b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "public/Resource/Templates.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Templates 의 개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false,
+      "edit-mdx:New .mdx file": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "9a25231f49afaeea",
+  "lastOpenFiles": [
+    "src/routes/posts/260211.md",
+    "src/routes/works.tsx",
+    "src/routes/posts.tsx",
+    "public/Resource/Templates.md",
+    "src/lib/posts/posts.server.ts",
+    "src/lib/posts/markdown.ts",
+    "src/lib/posts/postParser.ts",
+    "src/lib/posts/postTypes.ts",
+    "src/lib/posts/parser.ts",
+    "src/lib/posts/type.ts",
+    "src/lib/posts/postP",
+    "src/lib/posts/post-type.ts",
+    "node_modules/marked/man/marked.1.md",
+    "node_modules/marked/README.md",
+    "node_modules/marked/LICENSE.md",
+    "node_modules/gray-matter/node_modules/js-yaml/README.md",
+    "node_modules/gray-matter/node_modules/argparse/README.md",
+    "node_modules/gray-matter/node_modules/argparse/CHANGELOG.md",
+    "node_modules/gray-matter/README.md",
+    "node_modules/gray-matter/CHANGELOG.md",
+    "node_modules/sprintf-js/README.md",
+    "node_modules/extend-shallow/README.md",
+    "node_modules/is-extendable/README.md",
+    "node_modules/section-matter/README.md",
+    "node_modules/strip-bom-string/README.md",
+    "node_modules/kind-of/README.md",
+    "node_modules/kind-of/CHANGELOG.md"
+  ]
+}
