@@ -16,8 +16,16 @@ const parsedPosts: ParsedPost[] = Object.entries(rawPosts)
   })
   .filter((post) => !post.draft)
 
+function toTimestamp(date: string): number {
+  const value = Date.parse(date)
+
+  return Number.isNaN(value) ? Number.NEGATIVE_INFINITY : value
+}
+
+const sortedPosts = [...parsedPosts].sort((a, b) => toTimestamp(b.date) - toTimestamp(a.date))
+
 export function getAllPosts(): PostMeta[] {
-  return parsedPosts.map(({ content: _content, ...meta }) => meta)
+  return sortedPosts.map(({ content: _content, ...meta }) => meta)
 }
 
 export async function getPostBySlug(slug: string): Promise<PostWithHtml | null> {

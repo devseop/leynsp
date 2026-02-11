@@ -46,40 +46,40 @@
   }
 
   .post-content {
-    @apply max-w-[1200px] space-y-4 text-[clamp(1.2rem,2.15vw,2.55rem)] leading-[1.46] tracking-[-0.01em];
+    @apply max-w-[768px] space-y-4 text-base leading-[1.46] tracking-[-0.01em];
   }
 
   .post-content p {
-    @apply my-0;
+    @apply my-0 leading-relaxed;
   }
 
   .post-content h2,
   .post-content h3 {
-    @apply mt-12 mb-4 text-[clamp(2rem,4vw,3.75rem)] leading-[1.05] tracking-[-0.03em];
+    @apply my-2 text-2xl leading-[1.05] tracking-[-0.03em];
   }
 
   .post-content ul,
   .post-content ol {
-    @apply my-4 pl-8;
+    @apply mt-2 mb-4;
   }
 
   .post-content li {
-    @apply mb-2;
+    @apply list-disc list-inside;
   }
 
   .post-content code {
-    @apply bg-black/10 dark:bg-white/15 px-2 py-1 text-[0.8em];
+    @apply bg-black/10 dark:bg-white/15 px-2 py-1 text-sm;
   }
 
   .post-content pre {
-    @apply overflow-x-auto bg-black/10 dark:bg-white/10 p-4;
+    @apply overflow-x-auto bg-black/10 dark:bg-white/10 p-4 text-sm ;
   }
 
   .post-content pre code {
-    @apply bg-transparent p-0;
+    @apply bg-transparent p-0 text-sm ;
   }
 
   .post-content a {
-    @apply border-b-[4px] border-[var(--line)] transition-opacity hover:opacity-70;
+    @apply border-b-[0.08em] border-[var(--line)] transition-opacity hover:opacity-70;
   }
 }
