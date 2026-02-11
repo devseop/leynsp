@@ -1,10 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-
-const works = [
-  { title: 'LINKKU', href: 'https://example.com' },
-  { title: "Someone's face", href: 'https://example.com' },
-  { title: '데일리 아카이브', href: 'https://example.com' },
-]
+import { WORKS } from '../lib/const'
 
 export const Route = createFileRoute('/works')({
   component: WorksPage,
@@ -13,12 +8,16 @@ export const Route = createFileRoute('/works')({
 function WorksPage() {
   return (
     <main>
-      <h1>개인작업</h1>
-      <ul>
-        {works.map((work) => (
+      <ul className="max-w-[920px] space-y-3 md:space-y-4">
+        {WORKS.map((work) => (
           <li key={work.title}>
-            <a href={work.href} target="_blank" rel="noreferrer">
-              {work.title} ↗
+            <a 
+              href={work.href} 
+              target={work.href.startsWith('http') ? '_blank' : undefined}
+              rel={work.href.startsWith('http') ? 'noreferrer' : undefined} 
+              className="brutal-link block pb-1"
+            >
+              {work.title}
             </a>
           </li>
         ))}

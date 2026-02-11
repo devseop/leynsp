@@ -1,14 +1,85 @@
+@import "tailwindcss";
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #ffffff;
+  --fg: #000000;
+  --muted: #4f5054;
+  --line: #000000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.dark {
+  --bg: #000000;
+  --fg: #ffffff;
+  --muted: #ffffff;
+  --line: #ffffff;
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html,
+  body {
+    @apply m-0 min-h-full p-0;
+  }
+
+  body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    @apply antialiased;
+  }
+
+  a {
+    @apply no-underline;
+  }
+}
+
+@layer components {
+  .brutal-nav-item {
+    @apply font-medium text-[80px] leading-none tracking-[-0.035em] text-[var(--fg)] transition-opacity;
+  }
+
+  .brutal-link {
+    @apply font-medium text-[80px] leading-[93px] underline decoration-[0.08em] underline-offset-[0.12em] tracking-[-0.03em] text-[var(--fg)] transition-transform;
+  }
+
+  .post-content {
+    @apply max-w-[1200px] space-y-4 text-[clamp(1.2rem,2.15vw,2.55rem)] leading-[1.46] tracking-[-0.01em];
+  }
+
+  .post-content p {
+    @apply my-0;
+  }
+
+  .post-content h2,
+  .post-content h3 {
+    @apply mt-12 mb-4 text-[clamp(2rem,4vw,3.75rem)] leading-[1.05] tracking-[-0.03em];
+  }
+
+  .post-content ul,
+  .post-content ol {
+    @apply my-4 pl-8;
+  }
+
+  .post-content li {
+    @apply mb-2;
+  }
+
+  .post-content code {
+    @apply bg-black/10 dark:bg-white/15 px-2 py-1 text-[0.8em];
+  }
+
+  .post-content pre {
+    @apply overflow-x-auto bg-black/10 dark:bg-white/10 p-4;
+  }
+
+  .post-content pre code {
+    @apply bg-transparent p-0;
+  }
+
+  .post-content a {
+    @apply border-b-[4px] border-[var(--line)] transition-opacity hover:opacity-70;
+  }
 }

@@ -2,7 +2,6 @@ import { createFileRoute, notFound } from '@tanstack/react-router'
 import { createServerFn } from '@tanstack/react-start'
 import { getPostBySlug } from '../../lib/posts/posts.server'
 
-
 const getPost = createServerFn({ method: 'GET' })
   .inputValidator((slug: string) => slug)
   .handler(async ({ data }) => {
@@ -12,10 +11,10 @@ const getPost = createServerFn({ method: 'GET' })
 export const Route = createFileRoute('/posts/$slug')({
   loader: async ({ params }) => {
     const post = await getPost({ data: params.slug })
-    
+
     if (!post) throw notFound()
-    
-      return post
+
+    return post
   },
 
   component: PostPage,
@@ -25,10 +24,12 @@ function PostPage() {
   const post = Route.useLoaderData()
 
   return (
-    <main>
-      <h1>{post.title}</h1>
-      <p>{post.date}</p>
-      <article dangerouslySetInnerHTML={{ __html: post.html }} />
+    <main className="space-y-8 md:space-y-10">
+      <header className="space-y-3 md:space-y-4">
+        <h1 className="max-w-[980px] text-[80px] leading-[0.94] tracking-[-0.03em]">{post.title}</h1>
+        <p className="text-[80px] leading-none text-[var(--muted)]">{post.date}</p>
+      </header>
+      <article className="post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
     </main>
   )
 }
