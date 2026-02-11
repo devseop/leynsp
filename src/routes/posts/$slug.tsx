@@ -1,16 +1,9 @@
 import { createFileRoute, notFound } from '@tanstack/react-router'
-import { createServerFn } from '@tanstack/react-start'
-import { getPostBySlug } from '../../lib/posts/posts.server'
-
-const getPost = createServerFn({ method: 'GET' })
-  .inputValidator((slug: string) => slug)
-  .handler(async ({ data }) => {
-    return getPostBySlug(data)
-  })
+import { getPostBySlug } from '../../lib/posts/posts'
 
 export const Route = createFileRoute('/posts/$slug')({
   loader: async ({ params }) => {
-    const post = await getPost({ data: params.slug })
+    const post = await getPostBySlug(params.slug)
 
     if (!post) throw notFound()
 

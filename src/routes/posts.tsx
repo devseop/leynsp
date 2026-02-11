@@ -1,13 +1,8 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
-import { createServerFn } from '@tanstack/react-start'
-import { getAllPosts } from '../lib/posts/posts.server'
-
-const getPosts = createServerFn({ method: 'GET' }).handler(async () => {
-  return getAllPosts()
-})
+import { getAllPosts } from '../lib/posts/posts'
 
 export const Route = createFileRoute('/posts')({
-  loader: () => getPosts(),
+  loader: () => getAllPosts(),
   component: PostsPage,
 })
 
