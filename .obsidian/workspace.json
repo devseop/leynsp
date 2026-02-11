@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "53d0deafbc854f83",
+        "id": "39b1277edfa668c3",
         "type": "tabs",
         "children": [
           {
-            "id": "ac6ee9d71051722c",
+            "id": "8712a4e56c4a5fbf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "public/Resource/Templates.md",
+                "file": "src/routes/posts/230902.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Templates"
-            }
-          },
-          {
-            "id": "9a25231f49afaeea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "public/Resource/Templates.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Templates"
+              "title": "230902"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "public/Resource/Templates.md",
+                "file": "src/routes/posts/230902.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Templates 의 백링크"
+              "title": "230902 의 백링크"
             }
           },
           {
@@ -128,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "public/Resource/Templates.md",
+                "file": "src/routes/posts/230902.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Templates 의 나가는 링크"
+              "title": "230902 의 나가는 링크"
             }
           },
           {
@@ -171,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "public/Resource/Templates.md",
+                "file": "src/routes/posts/230902.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Templates 의 개요"
+              "title": "230902 의 개요"
             }
           }
         ]
@@ -200,8 +185,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9a25231f49afaeea",
+  "active": "8712a4e56c4a5fbf",
   "lastOpenFiles": [
+    "2023-09-001.md",
+    "src/routes/posts/230902.md",
+    "src/routes/posts/250515.md",
+    "src/routes/posts/231007.md",
+    "2023-10-001.md",
+    "src/routes/posts/240922.md",
+    "2024-09-001.md",
+    "2024-11-001.md",
+    "src/routes/posts/241109.md",
+    "src/routes/posts/250124.md",
+    "2025-01-001.md",
+    "2025-05-001.md",
+    "public/Resource/Templates.md",
     "src/lib/const.ts",
     "node_modules/@emnapi/runtime/README.md",
     "node_modules/@emnapi/runtime/package.json",
@@ -213,7 +211,6 @@
     "node_modules/@tybys/wasm-util/lib/cjs/wasi/path.js",
     "node_modules/@tybys/wasm-util/lib/cjs/wasi/index.js",
     "node_modules/@tybys/wasm-util/lib/cjs/wasi/fs.js",
-    "node_modules/@tybys/wasm-util/lib/cjs/wasi/fd.js",
     "node_modules/@tybys/wasm-util/README.md",
     "node_modules/@tailwindcss/vite/README.md",
     "node_modules/@tailwindcss/oxide-darwin-arm64/README.md",
@@ -225,18 +222,6 @@
     "node_modules/tapable/README.md",
     "node_modules/graceful-fs/README.md",
     "node_modules/lightningcss/README.md",
-    "node_modules/jiti/README.md",
-    "node_modules/enhanced-resolve/README.md",
-    "node_modules/tailwindcss/README.md",
-    "src/routes/posts/260211.md",
-    "public/Resource/Templates.md",
-    "node_modules/marked/man/marked.1.md",
-    "node_modules/marked/README.md",
-    "node_modules/marked/LICENSE.md",
-    "node_modules/gray-matter/node_modules/js-yaml/README.md",
-    "node_modules/gray-matter/node_modules/argparse/README.md",
-    "node_modules/gray-matter/node_modules/argparse/CHANGELOG.md",
-    "node_modules/gray-matter/README.md",
-    "node_modules/gray-matter/CHANGELOG.md"
+    "node_modules/jiti/README.md"
   ]
 }
