@@ -7,6 +7,7 @@ import { fileURLToPath, URL } from 'url'
 import { nitro } from 'nitro/vite'
 
 const config = defineConfig({
+  base: '/leynsp/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
@@ -20,7 +21,19 @@ const config = defineConfig({
       projects: ['./tsconfig.json'],
     }),
 
-    tanstackStart(),
+    tanstackStart({
+      router: {
+        basepath: '/leynsp',
+      },
+      prerender: {
+        enabled: true,
+        autoStaticPathsDiscovery: true,
+      },
+      pages: [{ path: '/' }],
+      sitemap: {
+        enabled: false,
+      },
+    }),
     viteReact(),
   ],
 })

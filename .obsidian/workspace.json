@@ -202,6 +202,8 @@
   },
   "active": "9a25231f49afaeea",
   "lastOpenFiles": [
+    "src/components/Header.tsx",
+    "src/components",
     "src/routes/posts/260211.md",
     "src/routes/works.tsx",
     "src/routes/posts.tsx",
@@ -213,7 +215,6 @@
     "src/lib/posts/parser.ts",
     "src/lib/posts/type.ts",
     "src/lib/posts/postP",
-    "src/lib/posts/post-type.ts",
     "node_modules/marked/man/marked.1.md",
     "node_modules/marked/README.md",
     "node_modules/marked/LICENSE.md",
