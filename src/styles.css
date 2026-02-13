@@ -4,13 +4,13 @@
 
 :root {
   --bg: #ffffff;
-  --fg: #000000;
+  --fg: #222222;
   --muted: #4f5054;
-  --line: #000000;
+  --line: #222222;
 }
 
 .dark {
-  --bg: #000000;
+  --bg: #222222;
   --fg: #ffffff;
   --muted: #ffffff;
   --line: #ffffff;
@@ -37,12 +37,22 @@
 }
 
 @layer components {
-  .brutal-nav-item {
-    @apply font-medium text-[80px] leading-none tracking-[-0.035em] text-[var(--fg)] transition-opacity;
+  .nav-item {
+    @apply font-medium text-2xl leading-none tracking-[-0.035em] transition-opacity;
   }
 
-  .brutal-link {
-    @apply font-medium text-[80px] leading-[93px] underline decoration-[0.08em] underline-offset-[0.12em] tracking-[-0.03em] text-[var(--fg)] transition-transform;
+
+
+  .lists li {
+    @apply font-medium text-2xl p-[6px] bg-[var(--fg)] text-[var(--bg)] w-fit;
+  }
+
+  .link {
+    @apply hover:underline hover:decoration-[0.08em] hover:underline-offset-[0.12em] tracking-[-0.03em] transition-transform;
+  }
+
+  .external-link {
+    @apply hover:underline hover:decoration-[0.08em] hover:underline-offset-[0.12em] tracking-[-0.03em] transition-transform;
   }
 
   .post-content {

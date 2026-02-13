@@ -55,14 +55,14 @@ export function Header() {
             <Link
               key={item.to}
               to={item.to}
-              className={`brutal-nav-item ${isActive ? 'underline decoration-[0.08em] underline-offset-[0.12em]' : ''}`}
+              className={`nav-item ${isActive ? 'p-[6px] bg-[var(--fg)] text-[var(--bg)]' : 'text-[var(--fg)]'}`}
             >
               {item.label}
             </Link>
           )
         })}
 
-        <button type="button" onClick={toggleTheme} className="brutal-nav-item text-right">
+        <button type="button" onClick={toggleTheme} className="nav-item text-right">
           {theme === 'dark' ? '밤' : '낮'}
         </button>
       </nav>

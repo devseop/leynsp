@@ -8,14 +8,14 @@ export const Route = createFileRoute('/works')({
 function WorksPage() {
   return (
     <main>
-      <ul className="max-w-[920px] space-y-3 md:space-y-4">
+      <ul className="lists">
         {WORKS.map((work) => (
           <li key={work.title}>
             <a 
               href={work.href} 
               target={work.href.startsWith('http') ? '_blank' : undefined}
               rel={work.href.startsWith('http') ? 'noreferrer' : undefined} 
-              className="brutal-link block pb-1"
+              className="link"
             >
               {work.title}
             </a>
