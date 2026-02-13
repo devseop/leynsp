@@ -1,3 +1,4 @@
+@import "highlight.js/styles/github-dark.css";
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -38,10 +39,12 @@
 
 @layer components {
   .nav-item {
-    @apply font-medium text-2xl leading-none tracking-[-0.035em] transition-opacity;
+    @apply font-medium text-2xl leading-none tracking-[-0.035em] transition-opacity p-[6px];
   }
 
-
+ .grid-lists {
+  @apply grid grid-cols-3 gap-10;
+ }
 
   .lists li {
     @apply font-medium text-2xl p-[6px] bg-[var(--fg)] text-[var(--bg)] w-fit;
@@ -51,43 +54,55 @@
     @apply hover:underline hover:decoration-[0.08em] hover:underline-offset-[0.12em] tracking-[-0.03em] transition-transform;
   }
 
-  .external-link {
-    @apply hover:underline hover:decoration-[0.08em] hover:underline-offset-[0.12em] tracking-[-0.03em] transition-transform;
+  .post-content h2,
+  .post-content h3 {
+    @apply mt-10 mb-1 text-2xl font-bold
   }
 
-  .post-content {
-    @apply max-w-[768px] space-y-4 text-base leading-[1.46] tracking-[-0.01em];
+  .post-content h4 {
+    @apply mt-6 mb-0 text-[18px] font-bold
   }
 
   .post-content p {
-    @apply my-0 leading-relaxed;
-  }
-
-  .post-content h2,
-  .post-content h3 {
-    @apply my-2 text-2xl leading-[1.05] tracking-[-0.03em];
+    @apply mt-6 mb-2 text-[17px] leading-[1.6];
   }
 
   .post-content ul,
   .post-content ol {
-    @apply mt-2 mb-4;
+    @apply mt-4 mb-1;
   }
 
   .post-content li {
-    @apply list-disc list-inside;
+    @apply list-disc list-inside text-[17px] leading-[1.6] mb-4;
+  }
+
+  .post-content li::marker {
+    @apply mr-1;
+  }
+
+  .post-content strong {
+    @apply font-bold;
+  }
+
+  .post-content blockquote {
+    @apply border-l-2 border-black/80 dark:border-white/80 pl-4 my-6;
+  }
+
+  .post-content blockquote p {
+    @apply mt-0 mb-0 text-xl font-bold;
+  }
+
+  .post-content aside {
+    @apply mt-4 mb-1 px-8 pt-1 pb-3 bg-black/5 dark:bg-white/5 rounded-md;
   }
 
   .post-content code {
-    @apply bg-black/10 dark:bg-white/15 px-2 py-1 text-sm;
+    @apply bg-black/5 dark:bg-white/5 px-2 py-1 text-sm rounded-sm;
   }
 
-  .post-content pre {
-    @apply overflow-x-auto bg-black/10 dark:bg-white/10 p-4 text-sm ;
-  }
-
-  .post-content pre code {
-    @apply bg-transparent p-0 text-sm ;
-  }
+  /* .post-content pre code.hljs {
+    @apply bg-transparent rounded-md;
+  } */
 
   .post-content a {
     @apply border-b-[0.08em] border-[var(--line)] transition-opacity hover:opacity-70;
