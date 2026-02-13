@@ -46,6 +46,10 @@
   @apply grid grid-cols-3 gap-10;
  }
 
+ .grid-lists li {
+  @apply font-medium text-2xl p-[6px] bg-[var(--fg)] text-[var(--bg)] w-fit;
+ }
+
   .lists li {
     @apply font-medium text-2xl p-[6px] bg-[var(--fg)] text-[var(--bg)] w-fit;
   }
@@ -99,10 +103,6 @@
   .post-content code {
     @apply bg-black/5 dark:bg-white/5 px-2 py-1 text-sm rounded-sm;
   }
-
-  /* .post-content pre code.hljs {
-    @apply bg-transparent rounded-md;
-  } */
 
   .post-content a {
     @apply border-b-[0.08em] border-[var(--line)] transition-opacity hover:opacity-70;

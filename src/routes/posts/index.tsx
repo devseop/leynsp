@@ -24,7 +24,7 @@ function PostsIndexPage() {
 
   return (
     <main>
-      <ul className="flex flex-col gap-5">
+      <ul className="flex flex-col gap-6">
         {sortedGroupedPosts.map(([year, posts]) => (
           <li key={year}>
             <h2 className="text-2xl font-medium leading-none p-[6px] bg-[var(--fg)] text-[var(--bg)] w-fit">{year}</h2>

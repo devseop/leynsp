@@ -12,7 +12,10 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as WorksRouteImport } from './routes/works'
 import { Route as PostsRouteImport } from './routes/posts'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as WorksIndexRouteImport } from './routes/works/index'
 import { Route as PostsIndexRouteImport } from './routes/posts/index'
+import { Route as WorksSomeonesFaceRouteImport } from './routes/works/someones-face'
+import { Route as WorksDailyArchiveRouteImport } from './routes/works/daily-archive'
 import { Route as PostsSlugRouteImport } from './routes/posts/$slug'
 
 const WorksRoute = WorksRouteImport.update({
@@ -30,10 +33,25 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WorksIndexRoute = WorksIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => WorksRoute,
+} as any)
 const PostsIndexRoute = PostsIndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => PostsRoute,
+} as any)
+const WorksSomeonesFaceRoute = WorksSomeonesFaceRouteImport.update({
+  id: '/someones-face',
+  path: '/someones-face',
+  getParentRoute: () => WorksRoute,
+} as any)
+const WorksDailyArchiveRoute = WorksDailyArchiveRouteImport.update({
+  id: '/daily-archive',
+  path: '/daily-archive',
+  getParentRoute: () => WorksRoute,
 } as any)
 const PostsSlugRoute = PostsSlugRouteImport.update({
   id: '/$slug',
@@ -44,36 +62,67 @@ const PostsSlugRoute = PostsSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/posts': typeof PostsRouteWithChildren
-  '/works': typeof WorksRoute
+  '/works': typeof WorksRouteWithChildren
   '/posts/$slug': typeof PostsSlugRoute
+  '/works/daily-archive': typeof WorksDailyArchiveRoute
+  '/works/someones-face': typeof WorksSomeonesFaceRoute
   '/posts/': typeof PostsIndexRoute
+  '/works/': typeof WorksIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/works': typeof WorksRoute
   '/posts/$slug': typeof PostsSlugRoute
+  '/works/daily-archive': typeof WorksDailyArchiveRoute
+  '/works/someones-face': typeof WorksSomeonesFaceRoute
   '/posts': typeof PostsIndexRoute
+  '/works': typeof WorksIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/posts': typeof PostsRouteWithChildren
-  '/works': typeof WorksRoute
+  '/works': typeof WorksRouteWithChildren
   '/posts/$slug': typeof PostsSlugRoute
+  '/works/daily-archive': typeof WorksDailyArchiveRoute
+  '/works/someones-face': typeof WorksSomeonesFaceRoute
   '/posts/': typeof PostsIndexRoute
+  '/works/': typeof WorksIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/posts' | '/works' | '/posts/$slug' | '/posts/'
+  fullPaths:
+    | '/'
+    | '/posts'
+    | '/works'
+    | '/posts/$slug'
+    | '/works/daily-archive'
+    | '/works/someones-face'
+    | '/posts/'
+    | '/works/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/works' | '/posts/$slug' | '/posts'
-  id: '__root__' | '/' | '/posts' | '/works' | '/posts/$slug' | '/posts/'
+  to:
+    | '/'
+    | '/posts/$slug'
+    | '/works/daily-archive'
+    | '/works/someones-face'
+    | '/posts'
+    | '/works'
+  id:
+    | '__root__'
+    | '/'
+    | '/posts'
+    | '/works'
+    | '/posts/$slug'
+    | '/works/daily-archive'
+    | '/works/someones-face'
+    | '/posts/'
+    | '/works/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   PostsRoute: typeof PostsRouteWithChildren
-  WorksRoute: typeof WorksRoute
+  WorksRoute: typeof WorksRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -99,12 +148,33 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/works/': {
+      id: '/works/'
+      path: '/'
+      fullPath: '/works/'
+      preLoaderRoute: typeof WorksIndexRouteImport
+      parentRoute: typeof WorksRoute
+    }
     '/posts/': {
       id: '/posts/'
       path: '/'
       fullPath: '/posts/'
       preLoaderRoute: typeof PostsIndexRouteImport
       parentRoute: typeof PostsRoute
+    }
+    '/works/someones-face': {
+      id: '/works/someones-face'
+      path: '/someones-face'
+      fullPath: '/works/someones-face'
+      preLoaderRoute: typeof WorksSomeonesFaceRouteImport
+      parentRoute: typeof WorksRoute
+    }
+    '/works/daily-archive': {
+      id: '/works/daily-archive'
+      path: '/daily-archive'
+      fullPath: '/works/daily-archive'
+      preLoaderRoute: typeof WorksDailyArchiveRouteImport
+      parentRoute: typeof WorksRoute
     }
     '/posts/$slug': {
       id: '/posts/$slug'
@@ -128,10 +198,24 @@ const PostsRouteChildren: PostsRouteChildren = {
 
 const PostsRouteWithChildren = PostsRoute._addFileChildren(PostsRouteChildren)
 
+interface WorksRouteChildren {
+  WorksDailyArchiveRoute: typeof WorksDailyArchiveRoute
+  WorksSomeonesFaceRoute: typeof WorksSomeonesFaceRoute
+  WorksIndexRoute: typeof WorksIndexRoute
+}
+
+const WorksRouteChildren: WorksRouteChildren = {
+  WorksDailyArchiveRoute: WorksDailyArchiveRoute,
+  WorksSomeonesFaceRoute: WorksSomeonesFaceRoute,
+  WorksIndexRoute: WorksIndexRoute,
+}
+
+const WorksRouteWithChildren = WorksRoute._addFileChildren(WorksRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   PostsRoute: PostsRouteWithChildren,
-  WorksRoute: WorksRoute,
+  WorksRoute: WorksRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

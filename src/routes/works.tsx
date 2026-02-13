@@ -1,27 +1,11 @@
-import { createFileRoute } from '@tanstack/react-router'
-import { WORKS } from '../lib/const'
+import { Outlet, createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/works')({
-  component: WorksPage,
+  component: WorksLayout,
 })
 
-function WorksPage() {
+function WorksLayout() {
   return (
-    <main>
-      <ul className="lists">
-        {WORKS.map((work) => (
-          <li key={work.title}>
-            <a 
-              href={work.href} 
-              target={work.href.startsWith('http') ? '_blank' : undefined}
-              rel={work.href.startsWith('http') ? 'noreferrer' : undefined} 
-              className="link"
-            >
-              {work.title}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </main>
+    <Outlet />
   )
 }
