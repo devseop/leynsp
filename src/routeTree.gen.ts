@@ -14,9 +14,12 @@ import { Route as PostsRouteImport } from './routes/posts'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as WorksIndexRouteImport } from './routes/works/index'
 import { Route as PostsIndexRouteImport } from './routes/posts/index'
+import { Route as WorksSoundArchiveRouteImport } from './routes/works/sound-archive'
 import { Route as WorksSomeonesFaceRouteImport } from './routes/works/someones-face'
-import { Route as WorksDailyArchiveRouteImport } from './routes/works/daily-archive'
 import { Route as PostsSlugRouteImport } from './routes/posts/$slug'
+import { Route as WorksSoundArchiveIndexRouteImport } from './routes/works/sound-archive/index'
+import { Route as WorksSoundArchiveListRouteImport } from './routes/works/sound-archive/list'
+import { Route as WorksSoundArchiveYearArchiveIdRouteImport } from './routes/works/sound-archive/$year/$archiveId'
 
 const WorksRoute = WorksRouteImport.update({
   id: '/works',
@@ -43,14 +46,14 @@ const PostsIndexRoute = PostsIndexRouteImport.update({
   path: '/',
   getParentRoute: () => PostsRoute,
 } as any)
+const WorksSoundArchiveRoute = WorksSoundArchiveRouteImport.update({
+  id: '/sound-archive',
+  path: '/sound-archive',
+  getParentRoute: () => WorksRoute,
+} as any)
 const WorksSomeonesFaceRoute = WorksSomeonesFaceRouteImport.update({
   id: '/someones-face',
   path: '/someones-face',
-  getParentRoute: () => WorksRoute,
-} as any)
-const WorksDailyArchiveRoute = WorksDailyArchiveRouteImport.update({
-  id: '/daily-archive',
-  path: '/daily-archive',
   getParentRoute: () => WorksRoute,
 } as any)
 const PostsSlugRoute = PostsSlugRouteImport.update({
@@ -58,24 +61,45 @@ const PostsSlugRoute = PostsSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => PostsRoute,
 } as any)
+const WorksSoundArchiveIndexRoute = WorksSoundArchiveIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => WorksSoundArchiveRoute,
+} as any)
+const WorksSoundArchiveListRoute = WorksSoundArchiveListRouteImport.update({
+  id: '/list',
+  path: '/list',
+  getParentRoute: () => WorksSoundArchiveRoute,
+} as any)
+const WorksSoundArchiveYearArchiveIdRoute =
+  WorksSoundArchiveYearArchiveIdRouteImport.update({
+    id: '/$year/$archiveId',
+    path: '/$year/$archiveId',
+    getParentRoute: () => WorksSoundArchiveRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/posts': typeof PostsRouteWithChildren
   '/works': typeof WorksRouteWithChildren
   '/posts/$slug': typeof PostsSlugRoute
-  '/works/daily-archive': typeof WorksDailyArchiveRoute
   '/works/someones-face': typeof WorksSomeonesFaceRoute
+  '/works/sound-archive': typeof WorksSoundArchiveRouteWithChildren
   '/posts/': typeof PostsIndexRoute
   '/works/': typeof WorksIndexRoute
+  '/works/sound-archive/list': typeof WorksSoundArchiveListRoute
+  '/works/sound-archive/': typeof WorksSoundArchiveIndexRoute
+  '/works/sound-archive/$year/$archiveId': typeof WorksSoundArchiveYearArchiveIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/posts/$slug': typeof PostsSlugRoute
-  '/works/daily-archive': typeof WorksDailyArchiveRoute
   '/works/someones-face': typeof WorksSomeonesFaceRoute
   '/posts': typeof PostsIndexRoute
   '/works': typeof WorksIndexRoute
+  '/works/sound-archive/list': typeof WorksSoundArchiveListRoute
+  '/works/sound-archive': typeof WorksSoundArchiveIndexRoute
+  '/works/sound-archive/$year/$archiveId': typeof WorksSoundArchiveYearArchiveIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -83,10 +107,13 @@ export interface FileRoutesById {
   '/posts': typeof PostsRouteWithChildren
   '/works': typeof WorksRouteWithChildren
   '/posts/$slug': typeof PostsSlugRoute
-  '/works/daily-archive': typeof WorksDailyArchiveRoute
   '/works/someones-face': typeof WorksSomeonesFaceRoute
+  '/works/sound-archive': typeof WorksSoundArchiveRouteWithChildren
   '/posts/': typeof PostsIndexRoute
   '/works/': typeof WorksIndexRoute
+  '/works/sound-archive/list': typeof WorksSoundArchiveListRoute
+  '/works/sound-archive/': typeof WorksSoundArchiveIndexRoute
+  '/works/sound-archive/$year/$archiveId': typeof WorksSoundArchiveYearArchiveIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -95,28 +122,36 @@ export interface FileRouteTypes {
     | '/posts'
     | '/works'
     | '/posts/$slug'
-    | '/works/daily-archive'
     | '/works/someones-face'
+    | '/works/sound-archive'
     | '/posts/'
     | '/works/'
+    | '/works/sound-archive/list'
+    | '/works/sound-archive/'
+    | '/works/sound-archive/$year/$archiveId'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/posts/$slug'
-    | '/works/daily-archive'
     | '/works/someones-face'
     | '/posts'
     | '/works'
+    | '/works/sound-archive/list'
+    | '/works/sound-archive'
+    | '/works/sound-archive/$year/$archiveId'
   id:
     | '__root__'
     | '/'
     | '/posts'
     | '/works'
     | '/posts/$slug'
-    | '/works/daily-archive'
     | '/works/someones-face'
+    | '/works/sound-archive'
     | '/posts/'
     | '/works/'
+    | '/works/sound-archive/list'
+    | '/works/sound-archive/'
+    | '/works/sound-archive/$year/$archiveId'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -162,18 +197,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PostsIndexRouteImport
       parentRoute: typeof PostsRoute
     }
+    '/works/sound-archive': {
+      id: '/works/sound-archive'
+      path: '/sound-archive'
+      fullPath: '/works/sound-archive'
+      preLoaderRoute: typeof WorksSoundArchiveRouteImport
+      parentRoute: typeof WorksRoute
+    }
     '/works/someones-face': {
       id: '/works/someones-face'
       path: '/someones-face'
       fullPath: '/works/someones-face'
       preLoaderRoute: typeof WorksSomeonesFaceRouteImport
-      parentRoute: typeof WorksRoute
-    }
-    '/works/daily-archive': {
-      id: '/works/daily-archive'
-      path: '/daily-archive'
-      fullPath: '/works/daily-archive'
-      preLoaderRoute: typeof WorksDailyArchiveRouteImport
       parentRoute: typeof WorksRoute
     }
     '/posts/$slug': {
@@ -182,6 +217,27 @@ declare module '@tanstack/react-router' {
       fullPath: '/posts/$slug'
       preLoaderRoute: typeof PostsSlugRouteImport
       parentRoute: typeof PostsRoute
+    }
+    '/works/sound-archive/': {
+      id: '/works/sound-archive/'
+      path: '/'
+      fullPath: '/works/sound-archive/'
+      preLoaderRoute: typeof WorksSoundArchiveIndexRouteImport
+      parentRoute: typeof WorksSoundArchiveRoute
+    }
+    '/works/sound-archive/list': {
+      id: '/works/sound-archive/list'
+      path: '/list'
+      fullPath: '/works/sound-archive/list'
+      preLoaderRoute: typeof WorksSoundArchiveListRouteImport
+      parentRoute: typeof WorksSoundArchiveRoute
+    }
+    '/works/sound-archive/$year/$archiveId': {
+      id: '/works/sound-archive/$year/$archiveId'
+      path: '/$year/$archiveId'
+      fullPath: '/works/sound-archive/$year/$archiveId'
+      preLoaderRoute: typeof WorksSoundArchiveYearArchiveIdRouteImport
+      parentRoute: typeof WorksSoundArchiveRoute
     }
   }
 }
@@ -198,15 +254,30 @@ const PostsRouteChildren: PostsRouteChildren = {
 
 const PostsRouteWithChildren = PostsRoute._addFileChildren(PostsRouteChildren)
 
+interface WorksSoundArchiveRouteChildren {
+  WorksSoundArchiveListRoute: typeof WorksSoundArchiveListRoute
+  WorksSoundArchiveIndexRoute: typeof WorksSoundArchiveIndexRoute
+  WorksSoundArchiveYearArchiveIdRoute: typeof WorksSoundArchiveYearArchiveIdRoute
+}
+
+const WorksSoundArchiveRouteChildren: WorksSoundArchiveRouteChildren = {
+  WorksSoundArchiveListRoute: WorksSoundArchiveListRoute,
+  WorksSoundArchiveIndexRoute: WorksSoundArchiveIndexRoute,
+  WorksSoundArchiveYearArchiveIdRoute: WorksSoundArchiveYearArchiveIdRoute,
+}
+
+const WorksSoundArchiveRouteWithChildren =
+  WorksSoundArchiveRoute._addFileChildren(WorksSoundArchiveRouteChildren)
+
 interface WorksRouteChildren {
-  WorksDailyArchiveRoute: typeof WorksDailyArchiveRoute
   WorksSomeonesFaceRoute: typeof WorksSomeonesFaceRoute
+  WorksSoundArchiveRoute: typeof WorksSoundArchiveRouteWithChildren
   WorksIndexRoute: typeof WorksIndexRoute
 }
 
 const WorksRouteChildren: WorksRouteChildren = {
-  WorksDailyArchiveRoute: WorksDailyArchiveRoute,
   WorksSomeonesFaceRoute: WorksSomeonesFaceRoute,
+  WorksSoundArchiveRoute: WorksSoundArchiveRouteWithChildren,
   WorksIndexRoute: WorksIndexRoute,
 }
 

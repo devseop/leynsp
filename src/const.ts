@@ -5,7 +5,7 @@ export const CONTACTS = [
 ]
 
 export const WORKS = [
-  { title: 'LINKKU(2025~ ) ↗', href: 'https://linkku.us' },
-  { title: "Someone's face(2026)", href: '/works/someones-face' },
-  { title: '데일리 아카이브(2020~ )', href: '/works/daily-archive' },
+  { title: 'LINKKU, 2025~  ↗', href: 'https://linkku.us' },
+  // { title: "Someone's face(2026)", href: '/works/someones-face' },
+  { title: '사운드 아카이브, 2020~ ', href: '/works/sound-archive' },
 ]
