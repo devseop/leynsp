@@ -29,7 +29,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <body className="bg-[var(--bg)] text-[var(--fg)]">
         <div className="mx-auto flex min-h-screen w-full max-w-[1080px] flex-col px-5 pb-[160px]">
           <Header />
-          <div className="mt-[80px]">{children}</div>
+          <div className="mt-10">{children}</div>
         </div>
         <Scripts />
       </body>

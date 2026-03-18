@@ -1,7 +1,7 @@
 export const CONTACTS = [
-  { label: '이력서 ↗', href: 'https://drive.google.com/file/d/18_kErMUYS44Ar5GMhggvFePQ49ecFdfU/view?usp=sharing' },
-  { label: '깃허브 ↗', href: 'https://github.com/devseop' },
-  { label: '메일 ↗', href: 'mailto:cocc263@gmail.com' },
+  { label: 'Resume ↗', href: 'https://drive.google.com/file/d/18_kErMUYS44Ar5GMhggvFePQ49ecFdfU/view?usp=sharing' },
+  { label: 'GitHub ↗', href: 'https://github.com/devseop' },
+  { label: 'Mail ↗', href: 'mailto:cocc263@gmail.com' },
 ]
 
 export const WORKS = [

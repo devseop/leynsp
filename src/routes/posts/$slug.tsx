@@ -18,9 +18,9 @@ function PostPage() {
 
   return (
     <main className="max-w-[712px] mx-auto space-y-[56px]">
-      <header className="flex flex-col items-start">
-        <h1 className="text-4xl font-medium p-[6px] bg-[var(--fg)] text-[var(--bg)] w-fit">{post.title}</h1>
-        <p className="text-sm px-1 py-[2px] bg-[var(--fg)] text-[var(--bg)] w-fit">{post.date}</p>
+      <header className="flex flex-col items-start gap-2">
+        <h1 className="text-4xl font-semibold text-[var(--fg)]">{post.title}</h1>
+        <p className="text-base font-medium text-[var(--fg)] opacity-80">{post.date}</p>
       </header>
       <article className="post-content" dangerouslySetInnerHTML={{ __html: post.html }} />
     </main>

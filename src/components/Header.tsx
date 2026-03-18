@@ -46,21 +46,23 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-[var(--bg)]/90 backdrop-blur supports-[backdrop-filter]:bg-[var(--bg)]/80 py-4">
       <nav className="flex flex-row items-center justify-between">
-        {navItems.map((item) => {
-          const isActive =
+        <div className="flex flex-row items-center gap-8">
+          {navItems.map((item) => {
+            const isActive =
             pathname === item.to ||
             (item.to !== '/' && pathname.startsWith(`${item.to}/`))
-
-          return (
-            <Link
+            
+            return (
+              <Link
               key={item.to}
               to={item.to}
               className={`nav-item ${isActive ? 'bg-[var(--fg)] text-[var(--bg)]' : 'text-[var(--fg)]'}`}
-            >
-              {item.label}
-            </Link>
-          )
-        })}
+              >
+                {item.label}
+              </Link>
+            )
+          })}
+        </div>
 
         <button type="button" onClick={toggleTheme} className="nav-item text-right">
           {theme === 'dark' ? '밤' : '낮'}

@@ -39,23 +39,31 @@
 
 @layer components {
   .nav-item {
-    @apply font-medium text-2xl leading-none tracking-[-0.035em] transition-opacity p-[6px];
+    @apply font-semibold text-2xl leading-none tracking-[-0.035em] transition-opacity p-[6px];
   }
 
  .grid-lists {
-  @apply grid grid-cols-3 gap-10;
+  @apply grid grid-cols-3 gap-10 ;
  }
 
  .grid-lists li {
-  @apply font-medium text-2xl p-[6px] bg-[var(--fg)] text-[var(--bg)] w-fit;
+  @apply font-semibold text-2xl text-[var(--fg)] w-fit;
  }
 
-  .lists li {
-    @apply font-medium text-2xl p-[6px] bg-[var(--fg)] text-[var(--bg)] w-fit;
-  }
+ .lists {
+  @apply flex flex-col gap-5 font-semibold text-2xl text-[var(--fg)] w-fit;
+ }
+
+ .linkLists {
+  @apply flex flex-col gap-2 font-semibold text-2xl text-[var(--fg)];
+ }
 
   .link {
-    @apply hover:underline hover:decoration-[0.08em] hover:underline-offset-[0.12em] tracking-[-0.03em] transition-transform;
+    @apply hover:underline hover:decoration-[0.08em] hover:underline-offset-[0.12em] tracking-[-0.03em] transition-transform w-fit;
+  }
+
+  .post-lists {
+    @apply flex flex-col gap-2 font-semibold text-2xl text-[var(--fg)] ml-1;
   }
 
   .post-content h2,
@@ -106,5 +114,11 @@
 
   .post-content a {
     @apply border-b-[0.08em] border-[var(--line)] transition-opacity hover:opacity-70;
+  }
+}
+
+@media (max-width: 767px) {
+  .lists br {
+    display: none;
   }
 }

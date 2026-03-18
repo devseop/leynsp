@@ -24,11 +24,11 @@ function PostsIndexPage() {
 
   return (
     <main>
-      <ul className="flex flex-col gap-6">
+      <section className="flex flex-col gap-6">
         {sortedGroupedPosts.map(([year, posts]) => (
-          <li key={year}>
-            <h2 className="text-2xl font-medium leading-none p-[6px] bg-[var(--fg)] text-[var(--bg)] w-fit">{year}</h2>
-            <ul className="lists">
+          <div key={year} className="flex flex-col gap-2">
+            <h2 className="text-2xl font-medium leading-none text-[var(--fg)] w-fit">{year}</h2>
+            <ul className="post-lists">
               {posts.map((post) => (
                 <li key={post.slug}>
                   <Link
@@ -36,14 +36,14 @@ function PostsIndexPage() {
                     params={{ slug: post.slug }}
                     className="link"
                   >
-                    {post.title}
+                    • {post.title}
                   </Link>
                 </li>
               ))}
             </ul>
-          </li>
+          </div>
         ))}
-      </ul>
+      </section>
     </main>
   )
 }
