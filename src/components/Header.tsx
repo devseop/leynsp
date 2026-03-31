@@ -18,9 +18,18 @@ function setDocumentTheme(theme: Theme) {
   }
 }
 
+function normalizePathname(pathname: string) {
+  if (pathname !== '/' && pathname.endsWith('/')) {
+    return pathname.slice(0, -1)
+  }
+
+  return pathname
+}
+
 export function Header() {
-  const pathname = useRouterState({ select: (state) => state.location.pathname })
+  const pathname = useRouterState({ select: (state) => normalizePathname(state.location.pathname) })
   const [theme, setTheme] = useState<Theme>('light')
+  const [isThemeResolved, setIsThemeResolved] = useState(false)
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme')
@@ -34,6 +43,7 @@ export function Header() {
 
     setTheme(resolvedTheme)
     setDocumentTheme(resolvedTheme)
+    setIsThemeResolved(true)
   }, [])
 
   const toggleTheme = () => {
@@ -48,9 +58,10 @@ export function Header() {
       <nav className="flex flex-row items-center justify-between">
         <div className="flex flex-row items-center gap-8">
           {navItems.map((item) => {
+            const normalizedItemPath = normalizePathname(item.to)
             const isActive =
-            pathname === item.to ||
-            (item.to !== '/' && pathname.startsWith(`${item.to}/`))
+              pathname === normalizedItemPath ||
+              (normalizedItemPath !== '/' && pathname.startsWith(`${normalizedItemPath}/`))
             
             return (
               <Link
@@ -65,7 +76,7 @@ export function Header() {
         </div>
 
         <button type="button" onClick={toggleTheme} className="nav-item text-right">
-          {theme === 'dark' ? '밤' : '낮'}
+          {isThemeResolved && theme === 'dark' ? '밤' : '낮'}
         </button>
       </nav>
     </header>
