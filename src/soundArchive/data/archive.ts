@@ -3,6 +3,13 @@ import { soundArchiveCoverImages } from './images'
 
 export const soundArchiveItems: SoundArchiveItem[] = [
   {
+    id: 'povidone',
+    trackTitle: 'POVIDONE (feat.Danpyunsun)',
+    artist: '에이트레인',
+    coverImageUrl: soundArchiveCoverImages.povidone,
+    listenedAt: '2026.03.19',
+  },
+  {
     id: 'BULLY',
     albumTitle: 'BULLY',
     artist: 'Kanye West',

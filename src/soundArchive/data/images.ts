@@ -44,6 +44,7 @@ import hurryUpTomorrowCover from '../../assets/soundArchive/2025/hurry_up_tomorr
 import spaceCover from '../../assets/soundArchive/2025/space.png'
 import candleFlameCover from '../../assets/soundArchive/2025/candle_flame.png'
 import lunarNewYearCover from '../../assets/soundArchive/2025/lunar_new_year.png'
+import povidoneCover from '../../assets/soundArchive/2026/povidone.png'
 
 export const soundArchiveCoverImages = {
   vol07: vol7Cover,
@@ -52,7 +53,8 @@ export const soundArchiveCoverImages = {
   doYourThingBabe: doYourThingBabeCover,
   sohSoh: sohSohCover,
   hereWeAre: hereWeAreCover,
-  bully: bullyCover,
+  bully: bullyCover,  
+  povidone: povidoneCover,
   lindyEfx: lindyEfxCover,
   karmaCollector: karmaCollectorCover,
   stayHere: stayHereCover,  
