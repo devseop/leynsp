@@ -58,11 +58,11 @@ export function groupArchiveItemsByAlbum(items: SoundArchiveItem[], year?: numbe
 }
 
 export function getArchiveCounts(items: SoundArchiveItem[]) {
-  const yearGroups = groupArchiveItemsByYear(items)
-  const albumCount = yearGroups.reduce((count, yearGroup) => count + yearGroup.albums.length, 0)
+  const albumCount = items.filter((item) => item.isAlbum).length
+  const trackCount = items.filter((item) => !item.isAlbum).length
 
   return {
-    trackCount: items.length,
+    trackCount,
     albumCount,
   }
 }

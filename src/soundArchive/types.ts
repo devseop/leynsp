@@ -6,6 +6,7 @@ export interface SoundArchiveItem {
   coverImageUrl: string
   listenedAt: string
   audioSrc?: string
+  isAlbum?: boolean
 }
 
 export interface SoundArchiveAlbumGroup {

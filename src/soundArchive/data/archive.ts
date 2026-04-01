@@ -15,6 +15,7 @@ export const soundArchiveItems: SoundArchiveItem[] = [
     artist: 'Kanye West',
     coverImageUrl: soundArchiveCoverImages.bully,
     listenedAt: '2026.03.30',
+    isAlbum: true,
   },
   {
     id: 'vol07',
@@ -22,6 +23,7 @@ export const soundArchiveItems: SoundArchiveItem[] = [
     artist: '고고학',
     coverImageUrl: soundArchiveCoverImages.vol07,
     listenedAt: '2026.03.16',
+    isAlbum: true,
   },
   {
     id: 'drive-me-crazy',
@@ -99,6 +101,7 @@ export const soundArchiveItems: SoundArchiveItem[] = [
     artist: 'Daniel Caesar',
     coverImageUrl: soundArchiveCoverImages.sonOfSpergy,
     listenedAt: '2025.10.24',
+    isAlbum: true,
   },
   {
     id: 'brown_sugar',
@@ -120,6 +123,7 @@ export const soundArchiveItems: SoundArchiveItem[] = [
     artist: 'service center',
     coverImageUrl: soundArchiveCoverImages.sitcom,
     listenedAt: '2025.09.17',
+    isAlbum: true,
   },
   {
     id: 'poser',
@@ -127,6 +131,7 @@ export const soundArchiveItems: SoundArchiveItem[] = [
     artist: 'Zion.T',
     coverImageUrl: soundArchiveCoverImages.poser,
     listenedAt: '2025.09.01',
+    isAlbum: true,
   },
   {
     id:'gosu',
@@ -204,6 +209,7 @@ export const soundArchiveItems: SoundArchiveItem[] = [
     artist: '염따',
     coverImageUrl: soundArchiveCoverImages.aliveAndWell4,
     listenedAt: '2025.06.16',
+    isAlbum: true,
   },  
   {
     id:'mad_funk_camp_all_starz',
@@ -302,6 +308,7 @@ export const soundArchiveItems: SoundArchiveItem[] = [
     artist: 'The Weeknd',
     coverImageUrl: soundArchiveCoverImages.hurryUpTomorrow,
     listenedAt: '2025.02.03',
+    isAlbum: true,
   },
   {
     id:'space',
@@ -330,6 +337,7 @@ export const soundArchiveItems: SoundArchiveItem[] = [
     artist: 'SZA',
     coverImageUrl: soundArchiveCoverImages.sosDeluxe,
     listenedAt: '2024.12.23',
+    isAlbum: true,
   },
   {
     id:'luther',
@@ -421,6 +429,7 @@ export const soundArchiveItems: SoundArchiveItem[] = [
     artist: '죠지',
     coverImageUrl: soundArchiveCoverImages.gimbap,
     listenedAt: '2024.09.13',
+    isAlbum: true,
   },
   {
     id:'booboo',
@@ -547,6 +556,7 @@ export const soundArchiveItems: SoundArchiveItem[] = [
     artist: '피셔맨',
     coverImageUrl: soundArchiveCoverImages.vanilla,
     listenedAt: '2024.04.08',
+    isAlbum: true,
   },
   {
     id:'spring',
@@ -568,6 +578,7 @@ export const soundArchiveItems: SoundArchiveItem[] = [
     artist: '피셔맨',
     coverImageUrl: soundArchiveCoverImages.dlc,
     listenedAt: '2024.03.22',
+    isAlbum: true,
   },
   {
     id:'psilocybin',
@@ -603,6 +614,7 @@ export const soundArchiveItems: SoundArchiveItem[] = [
     artist: '¥$, Kanye West & Ty Dolla $ign',
     coverImageUrl: soundArchiveCoverImages.vultures,
     listenedAt: '2024.02.22',
+    isAlbum: true,
   },
   {
     id:'dreamin_of_the_past',
