@@ -45,6 +45,59 @@ import spaceCover from '../../assets/soundArchive/2025/space.png'
 import candleFlameCover from '../../assets/soundArchive/2025/candle_flame.png'
 import lunarNewYearCover from '../../assets/soundArchive/2025/lunar_new_year.png'
 import povidoneCover from '../../assets/soundArchive/2026/povidone.png'
+import sosDeluxeCover from '../../assets/soundArchive/2024/sos_deluxe.png'
+import lutherCover from '../../assets/soundArchive/2024/luther.png'
+import ifThisWorldWereMineCover from '../../assets/soundArchive/2024/if_this_world_were_mine.png'
+import threeAndThirtyThreeCover from '../../assets/soundArchive/2024/3_33.png'
+import snowCover from '../../assets/soundArchive/2024/snow.png'
+import sickOfYouCover from '../../assets/soundArchive/2024/sick_of_you.png'
+import selfProclaimedCover from '../../assets/soundArchive/2024/self_proclaimed.png'
+import somuzuFeverCover from '../../assets/soundArchive/2024/somuzu_fever.png'
+import pumpCollectorsEditionCover from '../../assets/soundArchive/2024/pump_collectors_edition.png'
+import lingLingCover from '../../assets/soundArchive/2024/ling_ling.png'
+import septemberCover from '../../assets/soundArchive/2024/september.png'
+import youGotMeCover from '../../assets/soundArchive/2024/you_got_me.png'
+import gimbapCover from '../../assets/soundArchive/2024/gimbap.png'
+import boobooCover from '../../assets/soundArchive/2024/booboo.png'
+import seoulCover from '../../assets/soundArchive/2024/seoul.png'
+import porchCover from '../../assets/soundArchive/2024/porch.png'
+import noNeedToGoFarCover from '../../assets/soundArchive/2024/no_need_to_go_far.png'
+import missingYouLikeThisCover from '../../assets/soundArchive/2024/missing_you_like_this.png'
+import comeBackToMeCover from '../../assets/soundArchive/2024/come_back_to_me.png'
+import vistaCover from '../../assets/soundArchive/2024/vista.png'
+import summerCover from '../../assets/soundArchive/2024/summer.png'
+import resumeRewritingCover from '../../assets/soundArchive/2024/resume_rewriting.png'
+import fashoCover from '../../assets/soundArchive/2024/fasho.png'
+import nightmaresCover from '../../assets/soundArchive/2024/nightmares.png'
+import youngManCover from '../../assets/soundArchive/2024/young_man.png'
+import letItFlowCover from '../../assets/soundArchive/2024/let_it_flow.png'
+import seeYouAgainCover from '../../assets/soundArchive/2024/see_you_again.png'
+import myJinjiCover from '../../assets/soundArchive/2024/my_jinji.png'
+import ringringringCover from '../../assets/soundArchive/2024/ringringring.png'
+import babyPowderCover from '../../assets/soundArchive/2024/baby_powder.png'
+import vanillaCover from '../../assets/soundArchive/2024/vanilla.png'
+import springCover from '../../assets/soundArchive/2024/spring.png'
+import nananaCover from '../../assets/soundArchive/2024/nanana.png'
+import dlcCover from '../../assets/soundArchive/2024/dlc.png'
+import psilocybinCover from '../../assets/soundArchive/2024/psilocybin.png'
+import hyeaCover from '../../assets/soundArchive/2024/hyea.png'
+import fiftyFiveCover from '../../assets/soundArchive/2024/fifty_five.png'
+import todayNightCover from '../../assets/soundArchive/2024/today_night.png'
+import vulturesCover from '../../assets/soundArchive/2024/vultures.png'
+import chestnutYanggangCover from '../../assets/soundArchive/2024/chestnut_yanggang.png'
+import paulCover from '../../assets/soundArchive/2024/paul.png'
+import goodbyeMyBabyCover from '../../assets/soundArchive/2024/goodbye_my_baby.png'
+import giveItAllCover from '../../assets/soundArchive/2024/give_it_all.png'
+import noSurprisesCover from '../../assets/soundArchive/2024/no_surprises.png'
+import extinctionCover from '../../assets/soundArchive/2024/extinction.png'
+import vulturesSingleCover from '../../assets/soundArchive/2024/vultures_single.png'
+import workShitSleepCover from '../../assets/soundArchive/2024/work_shit_sleep.png'
+import lovinOnMeCover from '../../assets/soundArchive/2024/lovin_on_me.png'
+import ifhyCover from '../../assets/soundArchive/2024/ifhy.png'
+import myLoveMineAllMineCover from '../../assets/soundArchive/2024/my_love_mine_all_mine.png'
+import gawiCover from '../../assets/soundArchive/2024/gawi.png'
+import happyDayCover from '../../assets/soundArchive/2024/happy_day.png'
+import pickYouUpCover from '../../assets/soundArchive/2024/pick_you_up.png'
 
 export const soundArchiveCoverImages = {
   vol07: vol7Cover,
@@ -52,7 +105,7 @@ export const soundArchiveCoverImages = {
   yinAndYang: yinAndYangCover,
   doYourThingBabe: doYourThingBabeCover,
   sohSoh: sohSohCover,
-  hereWeAre: hereWeAreCover,
+  hereWeAre: hereWeAreCover,      
   bully: bullyCover,  
   povidone: povidoneCover,
   lindyEfx: lindyEfxCover,
@@ -66,7 +119,7 @@ export const soundArchiveCoverImages = {
   sitcom: sitcomCover,
   poser: poserCover,
   gosu: gosuCover,
-  baby: babyCover,
+  baby: babyCover,  
   iveFoundYou: iveFoundYouCover,
   stopTheSeason: stopTheSeasonCover,
   vividLalaLove: vividLalaLoveCover,
@@ -94,4 +147,57 @@ export const soundArchiveCoverImages = {
   space: spaceCover,
   candleFlame: candleFlameCover,
   lunarNewYear: lunarNewYearCover,
+  sosDeluxe: sosDeluxeCover,
+  luther: lutherCover,
+  ifThisWorldWereMine: ifThisWorldWereMineCover,
+  threeAndThirtyThree: threeAndThirtyThreeCover,
+  snow: snowCover,
+  sickOfYou: sickOfYouCover,  
+  selfProclaimed: selfProclaimedCover,
+  somuzuFever: somuzuFeverCover,
+  pumpCollectorsEdition: pumpCollectorsEditionCover,
+  lingLing: lingLingCover,
+  september: septemberCover,
+  youGotMe: youGotMeCover,
+  gimbap: gimbapCover,
+  booboo: boobooCover,
+  seoul: seoulCover,
+  porch: porchCover,
+  noNeedToGoFar: noNeedToGoFarCover,
+  missingYouLikeThis: missingYouLikeThisCover,
+  comeBackToMe: comeBackToMeCover,
+  vista: vistaCover,
+  summer: summerCover,
+  resumeRewriting: resumeRewritingCover,
+  fasho: fashoCover,
+  nightmares: nightmaresCover,
+  youngMan: youngManCover,
+  letItFlow: letItFlowCover,
+  seeYouAgain: seeYouAgainCover,
+  myJinji: myJinjiCover,
+  ringringring: ringringringCover,  
+  babyPowder: babyPowderCover,
+  vanilla: vanillaCover,
+  spring: springCover,
+  nanana: nananaCover,
+  dlc: dlcCover,
+  psilocybin: psilocybinCover,
+  hyea: hyeaCover,
+  fiftyFive: fiftyFiveCover,
+  todayNight: todayNightCover,
+  vultures: vulturesCover,
+  chestnutYanggang: chestnutYanggangCover,
+  paul: paulCover,
+  goodbyeMyBaby: goodbyeMyBabyCover,
+  giveItAll: giveItAllCover,
+  noSurprises: noSurprisesCover,
+  extinction: extinctionCover,
+  vulturesSingle: vulturesSingleCover,
+  workShitSleep: workShitSleepCover,
+  lovinOnMe: lovinOnMeCover,
+  ifhy: ifhyCover,
+  myLoveMineAllMine: myLoveMineAllMineCover,
+  gawi: gawiCover,
+  happyDay: happyDayCover,
+  pickYouUp: pickYouUpCover,
 } as const
