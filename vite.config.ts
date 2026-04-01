@@ -31,7 +31,12 @@ const config = defineConfig({
         enabled: true,
         autoStaticPathsDiscovery: true,
       },
-      pages: [{ path: '/' }],
+      pages: [
+        { path: '/' },
+        { path: '/works' },
+        { path: '/works/sound-archive' },
+        { path: '/works/sound-archive/list' },
+      ],
       sitemap: {
         enabled: false,
       },

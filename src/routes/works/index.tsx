@@ -1,4 +1,4 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { Link, createFileRoute } from '@tanstack/react-router'
 import { WORKS } from '../../const'
 
 export const Route = createFileRoute('/works/')({
@@ -11,14 +11,15 @@ function WorksPage() {
       <ul className="grid-lists">
         {WORKS.map((work) => (
           <li key={work.title}>
-            <a
-              href={work.href}
-              target={work.href.startsWith('http') ? '_blank' : undefined}
-              rel={work.href.startsWith('http') ? 'noreferrer' : undefined}
-              className="link"
-            >
-              {work.title}
-            </a>
+            {work.href.startsWith('http') ? (
+              <a href={work.href} target="_blank" rel="noreferrer" className="link">
+                {work.title}
+              </a>
+            ) : (
+              <Link to={work.href} className="link">
+                {work.title}
+              </Link>
+            )}
           </li>
         ))}
       </ul>
