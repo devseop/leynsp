@@ -15,6 +15,7 @@ export function AlbumDetail({ item }: AlbumDetailProps) {
           {item.albumTitle && <span className='text-sm font-bold leading-none'> (Album)</span>}
         </div>
         <p className='text-[32px] font-normal leading-none'>{item.artist}</p>
+        <span className='text-base font-normal leading-none mt-2'>{item.listenedAt}</span>
       </div>
 
       <img

@@ -98,6 +98,61 @@ import myLoveMineAllMineCover from '../../assets/soundArchive/2024/my_love_mine_
 import gawiCover from '../../assets/soundArchive/2024/gawi.png'
 import happyDayCover from '../../assets/soundArchive/2024/happy_day.png'
 import pickYouUpCover from '../../assets/soundArchive/2024/pick_you_up.png'
+import welcomeChangeCover from '../../assets/soundArchive/2023/welcome_change.png'
+import makeAWishCover from '../../assets/soundArchive/2023/make_a_wish.png'
+import waveCover from '../../assets/soundArchive/2023/wave.png'
+import killBillCover from '../../assets/soundArchive/2023/kill_bill.png'
+import providerCover from '../../assets/soundArchive/2023/provider.png'
+import howDeepCover from '../../assets/soundArchive/2023/how_deep.png'
+import everythingCover from '../../assets/soundArchive/2023/everything.png'
+import blancheCover from '../../assets/soundArchive/2023/blanche.png'
+import closeToYouCover from '../../assets/soundArchive/2023/close_to_you.png'
+import timezoneCover from '../../assets/soundArchive/2023/timezone.png'
+import weWouldHaveSomeCuteKidsCover from '../../assets/soundArchive/2023/we_would_have_some_cute_kids.png'
+import outLoudCover from '../../assets/soundArchive/2023/outloud.png'
+import justWannaRockCover from '../../assets/soundArchive/2023/just_wanna_rock.png'
+import spaceFantasyCover from '../../assets/soundArchive/2023/space_fantasy.png'
+import flightAttendantCover from '../../assets/soundArchive/2023/flight_attendant.png'
+import donQuijoteCover from '../../assets/soundArchive/2023/don_quijote.png'
+import loveThemeFromSpartacusCover from '../../assets/soundArchive/2023/love_theme_from_spartacus.png'
+import aiWoTsutaetaidatokaCover from '../../assets/soundArchive/2023/ai_wo_tsutaetaidatoka.png'
+import doYouLikeMeCover from '../../assets/soundArchive/2023/do_you_like_me.png'
+import mazeCover from '../../assets/soundArchive/2023/maze.png'
+import isThatIghtCover from '../../assets/soundArchive/2023/is_that_ight.png'
+import creepCover from '../../assets/soundArchive/2023/creep.png'
+import aroundTheWorldCover from '../../assets/soundArchive/2023/around_the_world.png'
+import porscheToplessCover from '../../assets/soundArchive/2023/porsche_topless.png'
+import nowitzkiCover from '../../assets/soundArchive/2023/nowitzki.png'
+import bankCover from '../../assets/soundArchive/2023/bank.png'
+import hotSummerCover from '../../assets/soundArchive/2023/hot_summer.png'
+import gorillaCover from '../../assets/soundArchive/2023/gorilla.png'
+import nineteenNinetyFiveCover from '../../assets/soundArchive/2023/nineteen_ninety_five.png'
+import punchDrunkLoveCover from '../../assets/soundArchive/2023/punch_drunk_love.png'
+import tikTakTokCover from '../../assets/soundArchive/2023/tik_tak_tok.png'
+import uneasyCover from '../../assets/soundArchive/2023/uneasy.png'
+import usTomorrowCover from '../../assets/soundArchive/2023/us_tomorrow.png'
+import iWonderCover from '../../assets/soundArchive/2023/i_wonder.png'
+import noPainCover from '../../assets/soundArchive/2023/no_pain.png'
+import iLoveYouCover from '../../assets/soundArchive/2023/i_love_you.png'
+import someGirlCover from '../../assets/soundArchive/2023/some_girl.png'
+import blackSkinheadCover from '../../assets/soundArchive/2023/black_skinhead.png'
+import blackHappinessCover from '../../assets/soundArchive/2023/black_happiness.png'
+import dreamOfEelCover from '../../assets/soundArchive/2023/dream_of_eel.png'
+import doItForLoveCover from '../../assets/soundArchive/2023/do_it_for_love.png'
+import ladyCover from '../../assets/soundArchive/2023/lady.png'
+import hotSummerNightCover from '../../assets/soundArchive/2023/hot_summer_night.png'
+import devilInADressCover from '../../assets/soundArchive/2023/devil_in_a_new_dress.png'
+import carryOnCover from '../../assets/soundArchive/2023/carry_on.png'
+import electricFeelCover from '../../assets/soundArchive/2023/electric_feel.png'
+import noLoveDubplateCover from '../../assets/soundArchive/2023/no_love_dubplate.png'
+import unloveCover from '../../assets/soundArchive/2023/unlove.png'
+import unrequitedCover from '../../assets/soundArchive/2023/unrequited.png'
+import aquaCover from '../../assets/soundArchive/2023/aqua.png'
+import undercoverMartynCover from '../../assets/soundArchive/2023/undercover_martyn.png'
+import apexCover from '../../assets/soundArchive/2023/apex.png'
+import theLightsBehindYouCover from '../../assets/soundArchive/2023/the_lights_behind_you.png'
+import passionateGoodbyeCover from '../../assets/soundArchive/2023/passionate_goodbye.png'
+
 
 export const soundArchiveCoverImages = {
   vol07: vol7Cover,
@@ -200,4 +255,58 @@ export const soundArchiveCoverImages = {
   gawi: gawiCover,
   happyDay: happyDayCover,
   pickYouUp: pickYouUpCover,
+  welcomeChange: welcomeChangeCover,
+  makeAWish: makeAWishCover,
+  wave: waveCover,
+  killBill: killBillCover,
+  provider: providerCover,
+  howDeep: howDeepCover,
+  everything: everythingCover,
+  blanche: blancheCover,
+  closeToYou: closeToYouCover,
+  timezone: timezoneCover,
+  weWouldHaveSomeCuteKids: weWouldHaveSomeCuteKidsCover,
+  outLoud: outLoudCover,
+  justWannaRock: justWannaRockCover,
+  spaceFantasy: spaceFantasyCover,
+  flightAttendant: flightAttendantCover,
+  donQuijote: donQuijoteCover,
+  loveThemeFromSpartacus: loveThemeFromSpartacusCover,
+  aiWoTsutaetaidatoka: aiWoTsutaetaidatokaCover,
+  doYouLikeMe: doYouLikeMeCover,
+  maze: mazeCover,
+  isThatIght: isThatIghtCover,
+  creep: creepCover,
+  aroundTheWorld: aroundTheWorldCover,
+  porscheTopless: porscheToplessCover,
+  nowitzki: nowitzkiCover,
+  bank: bankCover,
+  hotSummer: hotSummerCover,
+  gorilla: gorillaCover,
+  nineteenNinetyFive: nineteenNinetyFiveCover,
+  punchDrunkLove: punchDrunkLoveCover,
+  tikTakTok: tikTakTokCover,
+  uneasy: uneasyCover,
+  usTomorrow: usTomorrowCover,
+  iWonder: iWonderCover,
+  noPain: noPainCover,
+  iLoveYou: iLoveYouCover,
+  someGirl: someGirlCover,
+  blackSkinhead: blackSkinheadCover,
+  blackHappiness: blackHappinessCover,
+  dreamOfEel: dreamOfEelCover,
+  doItForLove: doItForLoveCover,
+  lady: ladyCover,
+  hotSummerNight: hotSummerNightCover,
+  devilInADress: devilInADressCover,
+  carryOn: carryOnCover,
+  electricFeel: electricFeelCover,
+  noLoveDubplate: noLoveDubplateCover,
+  unlove: unloveCover,
+  unrequited: unrequitedCover,
+  aqua: aquaCover,
+  undercoverMartyn: undercoverMartynCover,
+  apex: apexCover,
+  theLightsBehindYou: theLightsBehindYouCover,
+  passionateGoodbye: passionateGoodbyeCover,
 } as const
