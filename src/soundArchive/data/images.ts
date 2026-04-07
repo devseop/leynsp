@@ -152,7 +152,41 @@ import undercoverMartynCover from '../../assets/soundArchive/2023/undercover_mar
 import apexCover from '../../assets/soundArchive/2023/apex.png'
 import theLightsBehindYouCover from '../../assets/soundArchive/2023/the_lights_behind_you.png'
 import passionateGoodbyeCover from '../../assets/soundArchive/2023/passionate_goodbye.png'
-
+import crushCover from '../../assets/soundArchive/2022/crush.png'
+import sayNothingCover from '../../assets/soundArchive/2022/say_nothing.png'
+import snowZiontCover from '../../assets/soundArchive/2022/snow_ziont.png'
+import dontSayItsNotLoveCover from '../../assets/soundArchive/2022/dont_say_its_not_love.png'
+import heartlessCover from '../../assets/soundArchive/2022/heartless.png'
+import limitCover from '../../assets/soundArchive/2022/limit.png'
+import blinkingCover from '../../assets/soundArchive/2022/blinking.png'
+import offLineCover from '../../assets/soundArchive/2022/off_line.png'
+import leFestinCover from '../../assets/soundArchive/2022/le_festin.png'
+import allDayCover from '../../assets/soundArchive/2022/all_day.png'
+import goodNightGoodDreamCover from '../../assets/soundArchive/2022/good_night_good_dream.png'
+import piscesCover from '../../assets/soundArchive/2022/pisces.png'
+import oneTurnCover from '../../assets/soundArchive/2022/one_turn.png'
+import mmmCover from '../../assets/soundArchive/2022/mmm.png'
+import familyCover from '../../assets/soundArchive/2022/family.png'
+import textsGoGreenCover from '../../assets/soundArchive/2022/texts_go_green.png'
+import acidRainCover from '../../assets/soundArchive/2022/acid_rain.png'
+import flashingLightsCover from '../../assets/soundArchive/2022/flashing_lights.png'
+import beatBreaksCover from '../../assets/soundArchive/2022/beat_breaks.png'
+import kingPushCover from '../../assets/soundArchive/2022/king_push.png'
+import kickPush2Cover from '../../assets/soundArchive/2022/kick_push_2.png'
+import vogueBoysAndGirlsCover from '../../assets/soundArchive/2022/vogue_boys_and_girls.png'
+import goodMorningLoveCover from '../../assets/soundArchive/2022/good_morning_love.png'
+import hypnotizeUCover from '../../assets/soundArchive/2022/hypnotize_u.png'
+import cityLightsCover from '../../assets/soundArchive/2022/city_lights.png'
+import carpetInMyHeartCover from '../../assets/soundArchive/2022/carpet_in_my_heart.png'
+import throughTheWireCover from '../../assets/soundArchive/2022/through_the_wire.png'
+import goodNewsCover from '../../assets/soundArchive/2022/good_news.png'
+import mathematicsCover from '../../assets/soundArchive/2022/mathematics.png'
+import loveYouMoreCover from '../../assets/soundArchive/2022/love_you_more.png'
+import checkToCheckCover from '../../assets/soundArchive/2022/check_to_cheek.png'
+import endlessShineCover from '../../assets/soundArchive/2022/endless_shine.png'
+import hideInThisNightCover from '../../assets/soundArchive/2022/hide_in_this_night.png'
+import bomayeCover from '../../assets/soundArchive/2022/bomaye.png'
+import breakOfDawnCover from '../../assets/soundArchive/2022/break_of_dawn.png'
 
 export const soundArchiveCoverImages = {
   vol07: vol7Cover,
@@ -309,4 +343,39 @@ export const soundArchiveCoverImages = {
   apex: apexCover,
   theLightsBehindYou: theLightsBehindYouCover,
   passionateGoodbye: passionateGoodbyeCover,
+  crush: crushCover,
+  sayNothing: sayNothingCover,
+  snowZiont: snowZiontCover,  
+  dontSayItsNotLove: dontSayItsNotLoveCover,
+  heartless: heartlessCover,
+  limit: limitCover,
+  blinking: blinkingCover,
+  offLine: offLineCover,
+  leFestin: leFestinCover,
+  allDay: allDayCover,
+  goodNightGoodDream: goodNightGoodDreamCover,
+  pisces: piscesCover,
+  oneTurn: oneTurnCover,
+  mmm: mmmCover,
+  family: familyCover,
+  textsGoGreen: textsGoGreenCover,
+  acidRain: acidRainCover,
+  flashingLights: flashingLightsCover,
+  beatBreaks: beatBreaksCover,
+  kingPush: kingPushCover,
+  kickPush2: kickPush2Cover,
+  vogueBoysAndGirls: vogueBoysAndGirlsCover,
+  goodMorningLove: goodMorningLoveCover,
+  hypnotizeU: hypnotizeUCover,
+  cityLights: cityLightsCover,
+  carpetInMyHeart: carpetInMyHeartCover,
+  throughTheWire: throughTheWireCover,
+  goodNews: goodNewsCover,
+  mathematics: mathematicsCover,
+  loveYouMore: loveYouMoreCover,
+  checkToCheck: checkToCheckCover,
+  endlessShine: endlessShineCover,
+  hideInThisNight: hideInThisNightCover,
+  bomaye: bomayeCover,
+  breakOfDawn: breakOfDawnCover,
 } as const
