@@ -38,7 +38,7 @@ import ifYouLoveMeCover from '../../assets/soundArchive/2025/if_you_love_me.png'
 import fiftyThreeZeroCover from '../../assets/soundArchive/2025/530.png'
 import theHardestButtonToButtonCover from '../../assets/soundArchive/2025/the_hardest_button_to_button.png'
 import muttCover from '../../assets/soundArchive/2025/mutt.png'
-import pinkWhiteCover from '../../assets/soundArchive/2025/pink_white.png'
+import blondeCover from '../../assets/soundArchive/2025/pink_white.png'
 import thatSongCover from '../../assets/soundArchive/2025/that_song.png'
 import hurryUpTomorrowCover from '../../assets/soundArchive/2025/hurry_up_tomorrow.png'
 import spaceCover from '../../assets/soundArchive/2025/space.png'
@@ -141,7 +141,7 @@ import dreamOfEelCover from '../../assets/soundArchive/2023/dream_of_eel.png'
 import doItForLoveCover from '../../assets/soundArchive/2023/do_it_for_love.png'
 import ladyCover from '../../assets/soundArchive/2023/lady.png'
 import hotSummerNightCover from '../../assets/soundArchive/2023/hot_summer_night.png'
-import devilInADressCover from '../../assets/soundArchive/2023/devil_in_a_new_dress.png'
+import mbdtfCover from '../../assets/soundArchive/2023/devil_in_a_new_dress.png'
 import carryOnCover from '../../assets/soundArchive/2023/carry_on.png'
 import electricFeelCover from '../../assets/soundArchive/2023/electric_feel.png'
 import noLoveDubplateCover from '../../assets/soundArchive/2023/no_love_dubplate.png'
@@ -187,6 +187,72 @@ import endlessShineCover from '../../assets/soundArchive/2022/endless_shine.png'
 import hideInThisNightCover from '../../assets/soundArchive/2022/hide_in_this_night.png'
 import bomayeCover from '../../assets/soundArchive/2022/bomaye.png'
 import breakOfDawnCover from '../../assets/soundArchive/2022/break_of_dawn.png'
+import theMoonRepresentsMyHeartCover from '../../assets/soundArchive/2021/the_moon_represents_my_heart.png'
+import lifeIsGoodCover from '../../assets/soundArchive/2021/life_is_good.png'
+import loveAffairCover from '../../assets/soundArchive/2021/love_affair.png'
+import lastCover from '../../assets/soundArchive/2021/last.png'
+import callbackCover from '../../assets/soundArchive/2021/callback.png'
+import caravanCover from '../../assets/soundArchive/2021/caravan.png'
+import xiCover from '../../assets/soundArchive/2021/xi.png'
+import nextLifetimeCover from '../../assets/soundArchive/2021/next_lifetime.png'
+import downhillCover from '../../assets/soundArchive/2021/downhill.png'
+import suddenlyCover from '../../assets/soundArchive/2021/suddenly.png'
+import grandSlamCover from '../../assets/soundArchive/2021/grand_slam.png'
+import buttercupCover from '../../assets/soundArchive/2021/buttercup.png'
+import blueLightsCover from '../../assets/soundArchive/2021/blue_lights.png'
+import floatingCover from '../../assets/soundArchive/2021/floating.png'
+import blueCover from '../../assets/soundArchive/2021/blue.png'
+import junkDrunkLoveCover from '../../assets/soundArchive/2021/junk_drunk_love.png'
+import harderBetterFasterStrongerCover from '../../assets/soundArchive/2021/hbfs.png'
+import whatAShinnyNightCover from '../../assets/soundArchive/2021/what_a_shinny_night.png'
+import heavenCover from '../../assets/soundArchive/2021/heaven.png'
+import leaveTheDoorOpenCover from '../../assets/soundArchive/2021/leave_the_door_open.png'
+import theWayThingsWereCover from '../../assets/soundArchive/2021/the_way_things_were.png'
+import helloHelloHelloCover from '../../assets/soundArchive/2021/hello_hello_hello.png'
+import cryCover from '../../assets/soundArchive/2021/cry.png'
+import peachesCover from '../../assets/soundArchive/2021/peaches.png'
+import letsGoPicnicCover from '../../assets/soundArchive/2021/lets_go_picnic.png'
+import noBlueberriesCover from '../../assets/soundArchive/2021/no_blueberries.png'
+import archieMarryMeCover from '../../assets/soundArchive/2021/archie_marry_me.png'
+import cherryCover from '../../assets/soundArchive/2021/cherry.png'
+import iLearntSomeJazzTodayCover from '../../assets/soundArchive/2021/i_learnt_some_jazz_today.png'
+import holdMeCover from '../../assets/soundArchive/2021/hold_me.png'
+import hulaHoopsCover from '../../assets/soundArchive/2021/hula_hoops.png'
+import romanticIslandCover from '../../assets/soundArchive/2021/romantic_island.png'
+import youForeverCover from '../../assets/soundArchive/2021/you_forever.png'
+import heatCover from '../../assets/soundArchive/2021/heat.png'
+import diabloCover from '../../assets/soundArchive/2021/diablo.png'
+import longNightCover from '../../assets/soundArchive/2021/long_night.png'
+import goodMorningSunshineCover from '../../assets/soundArchive/2021/good_morning_sunshine.png'
+import balloonCover from '../../assets/soundArchive/2021/balloon.png'
+import dondaCover from '../../assets/soundArchive/2021/donda.png'
+import orangeCover from '../../assets/soundArchive/2021/orange.png'
+import newNormalCover from '../../assets/soundArchive/2021/new_normal.png'
+import overcomeCover from '../../assets/soundArchive/2021/overcome.png'
+import horseCover from '../../assets/soundArchive/2021/horse.png'
+import simplyCover from '../../assets/soundArchive/2021/simply.png'
+import crazyCover from '../../assets/soundArchive/2021/crazy.png'
+import fantasyCover from '../../assets/soundArchive/2021/fantasy.png'
+import niceForWhatCover from '../../assets/soundArchive/2021/nice_for_what.png'
+import hairDownCover from '../../assets/soundArchive/2021/hair_down.png'
+import patternCover from '../../assets/soundArchive/2021/pattern.png'
+import padoCover from '../../assets/soundArchive/2021/pado.png'
+import soBadCover from '../../assets/soundArchive/2021/so_bad.png'
+import quietCover from '../../assets/soundArchive/2021/quiet.png'
+import dontchaCover from '../../assets/soundArchive/2021/dontcha.png'
+import waveCarthegardenCover from '../../assets/soundArchive/2021/wave_carthegarden.png'
+import lookAtMeCover from '../../assets/soundArchive/2021/look_at_me.png'
+import peopleHeartCover from '../../assets/soundArchive/2021/people_heart.png'
+import midnightMusicCover from '../../assets/soundArchive/2021/midnight_music.png'
+import cantDoItCover from '../../assets/soundArchive/2021/cant_do_it.png'
+import fieldTripCover from '../../assets/soundArchive/2021/field_trip.png'
+import sheDoesntKnowCover from '../../assets/soundArchive/2021/she_doesnt_know.png'
+import rainCover from '../../assets/soundArchive/2021/rain.png'
+import dreamingOfMeCover from '../../assets/soundArchive/2021/dreaming_of_me.png'
+import cantFeelMyFaceCover from '../../assets/soundArchive/2021/cant_feel_my_face.png'
+import aJourneyCover from '../../assets/soundArchive/2021/a_journey.png'
+import passionfruitCover from '../../assets/soundArchive/2021/passionfruit.png'
+import thirdLineCover from '../../assets/soundArchive/2021/third_line.png'
 
 export const soundArchiveCoverImages = {
   vol07: vol7Cover,
@@ -230,7 +296,7 @@ export const soundArchiveCoverImages = {
   fiftyThreeZero: fiftyThreeZeroCover,
   theHardestButtonToButton: theHardestButtonToButtonCover,
   mutt: muttCover,
-  pinkWhite: pinkWhiteCover,
+  blonde: blondeCover,
   thatSong: thatSongCover,
   hurryUpTomorrow: hurryUpTomorrowCover,
   space: spaceCover,
@@ -332,7 +398,7 @@ export const soundArchiveCoverImages = {
   doItForLove: doItForLoveCover,
   lady: ladyCover,
   hotSummerNight: hotSummerNightCover,
-  devilInADress: devilInADressCover,
+  mbdtf: mbdtfCover,
   carryOn: carryOnCover,
   electricFeel: electricFeelCover,
   noLoveDubplate: noLoveDubplateCover,
@@ -378,4 +444,70 @@ export const soundArchiveCoverImages = {
   hideInThisNight: hideInThisNightCover,
   bomaye: bomayeCover,
   breakOfDawn: breakOfDawnCover,
+  theMoonRepresentsMyHeart: theMoonRepresentsMyHeartCover,
+  lifeIsGood: lifeIsGoodCover,
+  loveAffair: loveAffairCover,
+  last: lastCover,
+  callback: callbackCover,
+  caravan: caravanCover,
+  xi: xiCover,
+  nextLifetime: nextLifetimeCover,
+  downhill: downhillCover,
+  suddenly: suddenlyCover,
+  grandSlam: grandSlamCover,
+  buttercup: buttercupCover,
+  blueLights: blueLightsCover,
+  floating: floatingCover,
+  blue: blueCover,
+  junkDrunkLove: junkDrunkLoveCover,
+  harderBetterFasterStronger: harderBetterFasterStrongerCover,
+  whatAShinnyNight: whatAShinnyNightCover,
+  heaven: heavenCover,
+  leaveTheDoorOpen: leaveTheDoorOpenCover,
+  theWayThingsWere: theWayThingsWereCover,
+  helloHelloHello: helloHelloHelloCover,
+  cry: cryCover,
+  peaches: peachesCover,
+  letsGoPicnic: letsGoPicnicCover,
+  noBlueberries: noBlueberriesCover,
+  archieMarryMe: archieMarryMeCover,
+  cherry: cherryCover,
+  iLearntSomeJazzToday: iLearntSomeJazzTodayCover,
+  holdMe: holdMeCover,
+  hulaHoops: hulaHoopsCover,
+  romanticIsland: romanticIslandCover,
+  youForever: youForeverCover,
+  heat: heatCover,
+  diablo: diabloCover,
+  longNight: longNightCover,
+  goodMorningSunshine: goodMorningSunshineCover,
+  balloon: balloonCover,
+  donda: dondaCover,
+  orange: orangeCover,
+  newNormal: newNormalCover,
+  overcome: overcomeCover,
+  horse: horseCover,
+  simply: simplyCover,
+  crazy: crazyCover,
+  fantasy: fantasyCover,
+  niceForWhat: niceForWhatCover,
+  hairDown: hairDownCover,
+  pattern: patternCover,
+  pado: padoCover,
+  soBad: soBadCover,
+  quiet: quietCover,
+  dontcha: dontchaCover,
+  waveCarthegarden: waveCarthegardenCover,
+  lookAtMe: lookAtMeCover,
+  peopleHeart: peopleHeartCover,
+  midnightMusic: midnightMusicCover,
+  cantDoIt: cantDoItCover,
+  fieldTrip: fieldTripCover,
+  sheDoesntKnow: sheDoesntKnowCover,
+  rain: rainCover,
+  dreamingOfMe: dreamingOfMeCover,
+  cantFeelMyFace: cantFeelMyFaceCover,
+  aJourney: aJourneyCover,
+  passionfruit: passionfruitCover,
+  thirdLine: thirdLineCover,
 } as const
