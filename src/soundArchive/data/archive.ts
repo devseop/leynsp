@@ -3,6 +3,13 @@ import { soundArchiveCoverImages } from './images'
 
 export const soundArchiveItems: SoundArchiveItem[] = [
   {
+    id: 'shining_road',
+    trackTitle: 'Shining Road',
+    artist: '술탄 오브 더 디스코',
+    coverImageUrl: soundArchiveCoverImages.shiningRoad,
+    listenedAt: '2026.04.08',
+  },
+  {
     id: 'BULLY',
     albumTitle: 'BULLY',
     artist: 'Kanye West',
@@ -2018,6 +2025,7 @@ export const soundArchiveItems: SoundArchiveItem[] = [
     artist: 'Earl Sweatshirt',
     coverImageUrl: soundArchiveCoverImages.earl,
     listenedAt: '2020.12.01',
+    isAlbum: true,
   },
   {
     id:'tadow',

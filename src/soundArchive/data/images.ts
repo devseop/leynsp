@@ -286,9 +286,11 @@ import tearsInTheRainCover from '../../assets/soundArchive/2020/tears_in_the_rai
 import homecomingInstinctCover from '../../assets/soundArchive/2020/homecoming_instinct.png'
 import untitled01Cover from '../../assets/soundArchive/2020/untitled01.png'
 import tabDanceCover from '../../assets/soundArchive/2020/tab_dance.png'
+import shiningRoadCover from '../../assets/soundArchive/2026/shining_road.png'
 
 export const soundArchiveCoverImages = {
   vol07: vol7Cover,
+  shiningRoad: shiningRoadCover,
   driveMeCrazy: driveMeCrazyCover,
   yinAndYang: yinAndYangCover,
   doYourThingBabe: doYourThingBabeCover,
