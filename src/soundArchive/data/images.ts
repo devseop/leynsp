@@ -253,6 +253,39 @@ import cantFeelMyFaceCover from '../../assets/soundArchive/2021/cant_feel_my_fac
 import aJourneyCover from '../../assets/soundArchive/2021/a_journey.png'
 import passionfruitCover from '../../assets/soundArchive/2021/passionfruit.png'
 import thirdLineCover from '../../assets/soundArchive/2021/third_line.png'
+import waitingForYourCallingBackCover from '../../assets/soundArchive/2020/waiting_for_your_calling_back.png'
+import heartbreakAnniversaryCover from '../../assets/soundArchive/2020/heartbreak_anniversary.png'
+import colorsCover from '../../assets/soundArchive/2020/colors.png'
+import yourDespairCover from '../../assets/soundArchive/2020/your_despair.png'
+import ouiCover from '../../assets/soundArchive/2020/oui.png'
+import tipToeCover from '../../assets/soundArchive/2020/tip_toe.png'
+import busyGuyCover from '../../assets/soundArchive/2020/busy_guy.png'
+import themeCover from '../../assets/soundArchive/2020/theme.png'
+import aLotCover from '../../assets/soundArchive/2020/a_lot.png'
+import beYourGirlCover from '../../assets/soundArchive/2020/be_your_girl.png'
+import prettyLittleFearsCover from '../../assets/soundArchive/2020/pretty_little_fears.png'
+import minsooCover from '../../assets/soundArchive/2020/minsoo.png'
+import sleepCover from '../../assets/soundArchive/2020/sleep.png'
+import disappearedEverythingCover from '../../assets/soundArchive/2020/disappeared_everything.png'
+import ifallinlovetooeasilyCover from '../../assets/soundArchive/2020/i_fall_in_love_too_easily.png'
+import goneCover from '../../assets/soundArchive/2020/gone.png'
+import homeSweetHomeCover from '../../assets/soundArchive/2020/home_sweet_home.png'
+import earlCover from '../../assets/soundArchive/2020/earl.png'
+import tadowCover from '../../assets/soundArchive/2020/tadow.png'
+import islandCover from '../../assets/soundArchive/2020/island.png'
+import thinkAboutChuCover from '../../assets/soundArchive/2020/think_about_chu.png'
+import f2020Cover from '../../assets/soundArchive/2020/f2020.png'
+import nanchunCover from '../../assets/soundArchive/2020/nanchun.png'
+import parisTokyoCover from '../../assets/soundArchive/2020/paris_tokyo.png'
+import stormCover from '../../assets/soundArchive/2020/storm.png'
+import oceanCover from '../../assets/soundArchive/2020/ocean.png'
+import wetUmbrellaCover from '../../assets/soundArchive/2020/wet_umbrella.png'
+import holidayCover from '../../assets/soundArchive/2020/holiday.png'
+import aFlowerIsNotAFlowerCover from '../../assets/soundArchive/2020/a_flower_is_not_a_flower.png'
+import tearsInTheRainCover from '../../assets/soundArchive/2020/tears_in_the_rain.png'
+import homecomingInstinctCover from '../../assets/soundArchive/2020/homecoming_instinct.png'
+import untitled01Cover from '../../assets/soundArchive/2020/untitled01.png'
+import tabDanceCover from '../../assets/soundArchive/2020/tab_dance.png'
 
 export const soundArchiveCoverImages = {
   vol07: vol7Cover,
@@ -510,4 +543,37 @@ export const soundArchiveCoverImages = {
   aJourney: aJourneyCover,
   passionfruit: passionfruitCover,
   thirdLine: thirdLineCover,
+  waitingForYourCallingBack: waitingForYourCallingBackCover,
+  heartbreakAnniversary: heartbreakAnniversaryCover,
+  colors: colorsCover,
+  yourDespair: yourDespairCover,
+  oui: ouiCover,
+  tipToe: tipToeCover,
+  busyGuy: busyGuyCover,
+  theme: themeCover,
+  aLot: aLotCover,
+  beYourGirl: beYourGirlCover,
+  prettyLittleFears: prettyLittleFearsCover,
+  minsoo: minsooCover,
+  sleep: sleepCover,
+  disappearedEverything: disappearedEverythingCover,
+  ifallinlovetooeasily: ifallinlovetooeasilyCover,
+  gone: goneCover,
+  homeSweetHome: homeSweetHomeCover,
+  earl: earlCover,
+  tadow: tadowCover,
+  island: islandCover,
+  thinkAboutChu: thinkAboutChuCover,
+  f2020: f2020Cover,
+  nanchun: nanchunCover,
+  parisTokyo: parisTokyoCover,
+  storm: stormCover,
+  ocean: oceanCover,
+  wetUmbrella: wetUmbrellaCover,
+  holiday: holidayCover,
+  aFlowerIsNotAFlower: aFlowerIsNotAFlowerCover,
+  tearsInTheRain: tearsInTheRainCover,
+  homecomingInstinct: homecomingInstinctCover,
+  untitled01: untitled01Cover,
+  tabDance: tabDanceCover,
 } as const
